@@ -1,4 +1,4 @@
-baseURL = "https://nycehs.github.io/ehs-data-portal-frontend-temp/"
+baseURL = "https://a816-dohbesp.nyc.gov/IndicatorPublic"
 canonifyURLs = "true"
 relativeURLs = "true"
 languageCode = "en-us"
@@ -21,7 +21,7 @@ paginate = 9
     identifier = "01"
     name = "Home"
     pre = "<span class='text-primary'><i class='fa fa-home' aria-hidden='true'></i></span>"
-    url = "/"
+    url = "https://a816-dohbesp.nyc.gov/IndicatorPublic/"
     weight = -110
 
   [[menu.main]]
