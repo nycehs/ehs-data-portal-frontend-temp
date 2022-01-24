@@ -1,7 +1,7 @@
 ---
 title: "Neighborhood boundaries on the EH Data Portal"
 date: 2020-08-01T08:33:22-04:00
-draft: false
+draft: true
 tags: 
 categories: ["internal","neighborhoods"]
 keywords: ["geography","maps","neighborhoods","health data","methods","geographic"]

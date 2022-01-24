@@ -1,7 +1,7 @@
 ---
 title: Social and Economic Conditions
 date: 2021-05-28 18:02:58.798880
-draft: false
+draft: true
 tags: 
 categories: ["social","housing"]
 keywords: ["social","social justice","justice","injustice","social conditions","poverty","racism","housing","health"]

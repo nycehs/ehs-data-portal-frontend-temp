@@ -1,7 +1,7 @@
 ---
 title: Bed Bugs
 date: 2021-05-28 18:02:58.735039
-draft: false
+draft: true
 tags: 
 categories: ["housing","pests","neighborhoods"]
 keywords: ["bed bugs","pests","housing","maintenance deficiencies"]

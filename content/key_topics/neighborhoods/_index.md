@@ -1,7 +1,7 @@
 ---
 title: "Neighborhoods"
 date: 2021-09-08T10:59:52-04:00
-draft: false
+draft: true
 tags: 
 categories: [neighborhoods]
 keyTopic: neighborhoods

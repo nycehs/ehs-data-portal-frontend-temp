@@ -1,7 +1,7 @@
 ---
 title: Cockroaches
 date: 2021-05-28 18:02:58.860064
-draft: false
+draft: true
 tags: 
 categories: ["pests","housing","neighborhoods"]
 keywords: ["pests","cockroaches","roaches","bugs","housing"]

@@ -1,7 +1,7 @@
 ---
 title: Noise
 date: 2021-05-28 18:02:58.747003
-draft: false
+draft: true
 tags: 
 categories: ["transportation","neighborhoods"]
 keywords: ["neighborhoods","traffic","noise","construction"]

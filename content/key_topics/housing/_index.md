@@ -1,7 +1,7 @@
 ---
 title: "Housing"
 date: 2021-10-02T07:56:00-04:00
-draft: false
+draft: true
 tags: 
 categories: [housing]
 keyTopic: housing

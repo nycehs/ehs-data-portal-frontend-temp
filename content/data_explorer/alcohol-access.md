@@ -1,7 +1,7 @@
 ---
 title: Alcohol Access
 date: 2021-05-28 18:02:58.771666
-draft: false
+draft: true
 tags: 
 categories: ["foodanddrink","neighborhoods"]
 keywords: ["drink","alcohol","neighborhoods"]

@@ -1,7 +1,7 @@
 ---
 title: "What our air quality monitors tell us about NYC's neighborhoods"
 date: 2019-11-25T13:24:52-04:00
-draft: false
+draft: true
 tags: 
 categories: ["transportation","airquality","neighborhoods"]
 keywords: ["air quality","traffic","transportation","cars","traffic","car-free","carfree","pedestrians","cycling","bikes","biking","pollution","air pollution", "lungs","breathing"]

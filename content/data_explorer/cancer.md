@@ -1,7 +1,7 @@
 ---
 title: Cancer
 date: 2021-05-28 18:02:58.804723
-draft: false
+draft: true
 tags: 
 categories: ["housing","childhealth","healthoutcomes"]
 keywords: ["cancer","cancers","children","environmental health"]

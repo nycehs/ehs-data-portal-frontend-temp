@@ -1,7 +1,7 @@
 ---
 title: Pesticides
 date: 2021-05-28 18:02:58.904121
-draft: false
+draft: true
 tags: 
 categories: ["pests"]
 keywords: ["pests","pesticides","mice","rats","cockroaches","bed bugs","rodents"]

@@ -1,7 +1,7 @@
 ---
 title: Housing
 date: 2021-05-28 18:02:58.817845
-draft: false
+draft: true
 tags: 
 categories: ["housing","social","neighborhoods"]
 keywords: ["built environments","neighborhoods","social","housing","maintenance","maintenance deficiencies","healthy housing"]

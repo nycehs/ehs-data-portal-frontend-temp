@@ -1,7 +1,7 @@
 ---
 title: Asthma
 date: 2021-05-28 18:02:58.749912
-draft: false
+draft: true
 tags: 
 categories: ["airquality","childhealth","housing","transportation","climatehealth","healthoutcomes"]
 keywords: ["asthma","children","hospitalizations","emergency department visits","breathing","housing","physical activity"]

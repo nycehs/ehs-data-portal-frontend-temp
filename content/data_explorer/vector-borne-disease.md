@@ -1,7 +1,7 @@
 ---
 title: Vector-borne Disease
 date: 2021-05-28 18:02:58.809035
-draft: false
+draft: true
 tags: 
 categories: ["pests","climatehealth","healthoutcomes"]
 keywords: ["ticks","lyme disease","lyme","disease","climate change"]

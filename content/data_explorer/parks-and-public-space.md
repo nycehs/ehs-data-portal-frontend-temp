@@ -1,7 +1,7 @@
 ---
 title: Parks and Public Space
 date: 2021-05-28 18:02:58.757692
-draft: false
+draft: true
 tags: 
 categories: ["transportation","neighborhoods"]
 keywords: ["parks","neighborhoods","transportation","green","trees","greenspace"]

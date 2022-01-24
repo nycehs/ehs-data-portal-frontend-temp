@@ -1,7 +1,7 @@
 ---
 title: Weather-Related Illness
 date: 2021-05-28 18:02:58.866835
-draft: false
+draft: true
 tags: 
 categories: ["social","climatehealth","healthoutcomes"]
 keywords: ["weather-related illness","climate change","heat","hot weather","cold weather","cold","mortality","social","hospitalizations","emergency department visits","summer","winter"]

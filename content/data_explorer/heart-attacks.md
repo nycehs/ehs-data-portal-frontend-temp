@@ -1,7 +1,7 @@
 ---
 title: Heart Attacks
 date: 2021-05-28 18:02:58.879198
-draft: false
+draft: true
 tags: 
 categories: ["healthoutcomes"]
 keywords: ["heart","attacks","hospitalizations","emergency department visits"]

@@ -1,7 +1,7 @@
 ---
 title: Transportation-related Injuries
 date: 2021-05-28 18:02:58.745496
-draft: false
+draft: true
 tags: 
 categories: ["transportation","healthoutcomes"]
 keywords: ["transportation","traffic","cars","trucks","roads","streets","safety","emissions","driving","cars","hospitalizations","emergency department visits","biking","cycling","bikes"]

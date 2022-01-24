@@ -1,7 +1,7 @@
 ---
 title: "Social and Economic Conditions"
 date: 2021-10-01T07:59:16-04:00
-draft: false
+draft: true
 tags: 
 categories: [social]
 keyTopic: social

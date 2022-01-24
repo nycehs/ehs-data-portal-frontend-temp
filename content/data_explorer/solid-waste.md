@@ -1,7 +1,7 @@
 ---
 title: Solid Waste
 date: 2021-05-28 18:02:58.840943
-draft: false
+draft: true
 tags: 
 categories: []
 keywords: ["waste","garbage"]

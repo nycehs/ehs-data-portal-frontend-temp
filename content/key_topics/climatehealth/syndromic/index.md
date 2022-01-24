@@ -1,7 +1,7 @@
 ---
 title: "Real-time heat-related illness"
 date: 2021-08-30T11:51:01-04:00
-draft: false
+draft: true
 categories: [climatehealth]
 keywords: ["interactive","heat","weather","hot weather","extreme heat","heat mortality","heat-related illness","emergency room","emergency department","ED visit"]
 menu:

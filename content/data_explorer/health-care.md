@@ -1,7 +1,7 @@
 ---
 title: Health Care
 date: 2021-05-28 18:02:58.908603
-draft: false
+draft: true
 tags: 
 categories: ["social"]
 keywords: ["health care","doctors","mortality"]

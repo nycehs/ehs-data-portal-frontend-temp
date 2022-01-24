@@ -1,7 +1,7 @@
 ---
 title: Cigarette Smoke
 date: 2021-05-28 18:02:58.768736
-draft: false
+draft: true
 tags: 
 categories: ["housing","childhealth"]
 keywords: ["smoking","cigarettes","cancer","secondhand","smoke","work","home", "children"]

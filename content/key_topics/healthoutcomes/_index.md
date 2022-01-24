@@ -1,7 +1,7 @@
 ---
 title: "Health outcomes"
 date: 2021-08-04T12:32:15-04:00
-draft: false
+draft: true
 tags: 
 categories: [healthoutcomes]
 keyTopic: healthoutcomes
