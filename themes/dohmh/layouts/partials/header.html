@@ -160,18 +160,18 @@
         <div class="wide">
 
             <nav class="nav nav-pills border-bottom" role="navigation">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                <div class="nav-item{{ if or ($currentPage.IsMenuCurrent `main` .) (eq $currentPage.URL .URL) }} active{{ end }}">
 
-                    <a class="nav-link" href="{{ .URL }}" id="nav-item-{{ .Identifier }}">
-                        {{ .Pre }} {{ .Name }}
-                    </a>
+                <div class="nav-item">
+                    <a class="nav-link" href="https://a816-dohbesp.nyc.gov/IndicatorPublic/" id="nav-item-01">Home</a>
+                </div>
+
+                <div class="nav-item">
+
+                    <a class="nav-link" href="/neighborhood_reports/" id="nav-item-01">Neighborhood Reports</a>
 
                 </div>
+
                 <!-- .nav-item -->
-                {{ end }}
-                
             </nav>
 
         </div>
