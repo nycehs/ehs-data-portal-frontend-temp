@@ -38,7 +38,7 @@
 {{ end }}
 
 <!-- Analytics placeholder -->
-{{ if eq (getenv "HUGO_ENV") "deploy" }} 
+{{ if not .Site.BuildDrafts}}
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28636785-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -46,4 +46,4 @@
     gtag('js', new Date());
     gtag('config', 'UA-28636785-1');
   </script>
-{{ end }} 
+{{ end }}
