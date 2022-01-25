@@ -520,11 +520,28 @@
       </div>
     </div>
   </div>
-
-
-
-
 </article>
+
+<div class="modal" tabindex="-1" role="dialog" id="prototypeModal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">We'd like your opinion.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>We're working on a new version of the EH Data Portal. We'd like your opinions. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJFcjBz2sbTvSbRHSDQiyHTU_msnuwdRnnEZCHR5KsyolliQ/viewform?usp=sf_link" target="_blank">Please click here to take a 30-second survey.</a> Thank you!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
       <ul id="results"></ul>
@@ -852,6 +869,10 @@ function changeDescription(x) {
     } else {
       document.getElementById('warning').style.display = "block" 
     }
+    });
+
+    $(window).on('load', function() {
+      $('#prototypeModal').modal('show');
     });
   </script>
 
