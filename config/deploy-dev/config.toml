@@ -1,0 +1,4 @@
+baseURL = "http://devnetbesp201/IndicatorPublic/"
+
+[params]
+    devpath = "/IndicatorPublic/"
