@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keywords on Environment &amp; Health Data Portal</title>
-    <link>https://a816-dohbesp.nyc.gov/IndicatorPublic/keywords/</link>
+    <link>http://devnetbesp201/IndicatorPublic/keywords/</link>
     <description>Recent content in Keywords on Environment &amp; Health Data Portal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://a816-dohbesp.nyc.gov/IndicatorPublic/keywords/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://devnetbesp201/IndicatorPublic/keywords/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
