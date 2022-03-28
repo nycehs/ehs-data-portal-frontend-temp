@@ -7,10 +7,14 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["foodanddrink"]
 keywords: ["food","drink","sugary drinks","soda"]
-indicators: [{"subtopic_id": 102, "internal_id": 2097, "name": "Adult Consumption of 1 or More Sugary Drinks Per Day", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2097,719b87,102,Summarize"}, {"subtopic_id": 102, "internal_id": 2098, "name": "Youth Consumption of 1 or More Sugary Drinks Per Day", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2098,719b87,102,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2097
+      - 2098
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Sugary drinks contribute to a higher-calorie diet, long-term weight gain, and increased risk of heart disease and diabetes. Sugary drinks provide little or no nutritional value, and because they don’t fill you up the way food does, you end up consuming more calories. Also, food and beverage portion sizes have exploded over the past several decades, and studies have shown that when given larger portions, people consume more without recognizing it.

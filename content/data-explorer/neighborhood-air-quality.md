@@ -7,10 +7,36 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["airquality","neighborhoods"]
 keywords: ["air quality","pollution","emissions","exhaust","pollutants","pm2.5","asthma","breathing","lungs","asthma","respiratory","illness","hospitalizations","emergency department visits"]
-indicators: [{"subtopic_id": 91, "internal_id": 2024, "name": "Black Carbon", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2024,719b87,91,Summarize"}, {"subtopic_id": 91, "internal_id": 2023, "name": "Fine Particulate Matter (PM2.5)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2023,719b87,91,Summarize"}, {"subtopic_id": 91, "internal_id": 2028, "name": "Nitric Oxide (NO)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2028,719b87,91,Summarize"}, {"subtopic_id": 91, "internal_id": 2025, "name": "Nitrogen Dioxide (NO2)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2025,719b87,91,Summarize"}, {"subtopic_id": 91, "internal_id": 2027, "name": "Ozone (O3)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2027,719b87,91,Summarize"}, {"subtopic_id": 91, "internal_id": 2026, "name": "Sulfur Dioxide (SO2)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2026,719b87,91,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2380
+      - 2384
+      - 2048
+      - 2378
+      - 2379
+      - 2383
+  - header: Asthma Hospitalizations
+    IndicatorID:
+      - 2382
+      - 2387
+      - 84
+      - 2381
+      - 2386
+  - header: Prevalence
+    IndicatorID:
+      - 2414
+      - 18
+      - 2392
+      - 2147
+      - 2149
+      - 2339
+  - header: null
+    IndicatorID:
+      - 1
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 **Air quality can vary** **from neighborhood to neighborhood**. That is why the **New York City Community Air Survey (NYCCAS)**keeps track of street-level air pollution from about 100 locations throughout New York City every season. NYCCAS is part of [OneNYC](http://www1.nyc.gov/html/onenyc/index.html "OneNYC"), New York City's long-term plan for sustainability.

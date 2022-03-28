@@ -7,10 +7,19 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["airquality","transportation","healthoutcomes"]
 keywords: ["air quality","pollution","emissions","exhaust","pollutants","pm2.5","asthma","breathing","lungs","asthma","respiratory","illness","hospitalizations","emergency department visits"]
-indicators: [{"subtopic_id": 103, "internal_id": 2122, "name": "O3-Attributable Asthma Emergency Department Visits", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2122,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2124, "name": "O3-Attributable Asthma Hospitalizations ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2124,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2121, "name": "O3-Attributable Cardiac and Respiratory Deaths ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2121,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2117, "name": "PM2.5-Attributable Asthma Emergency Department Visits ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2117,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2120, "name": "PM2.5-Attributable Cardiovascular Hospitalizations (Adults 40 Yrs and Older) ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2120,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2108, "name": "PM2.5-Attributable Deaths ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2108,719b87,103,Summarize"}, {"subtopic_id": 103, "internal_id": 2119, "name": "PM2.5-Attributable Respiratory Hospitalizations (Adults 20 Yrs and Older)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2119,719b87,103,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2122
+      - 2124
+      - 2121
+      - 2117
+      - 2120
+      - 2108
+      - 2119
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Air pollution is an important environmental threat to the health of New York City residents. Exposures to two common air pollutants, [fine particulate matter (PM2.5)](http://www.nyc.gov/html/doh/html/environmental/tracking-glossary.shtml) and [ozone (O3)](http://www.nyc.gov/html/doh/html/environmental/tracking-glossary.shtml), can worsen respiratory illness and heart conditions and contribute to premature deaths. Older adults, children and people with existing heart and lung disease are especially affected. This site provides estimates of the impact of air pollution on the health of NYC residents as measured by the numbers of emergency department visits, hospitalizations, and deaths attributable to PM2.5 and ozone.

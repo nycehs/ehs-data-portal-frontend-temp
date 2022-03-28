@@ -7,10 +7,12 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["social"]
 keywords: ["race","ethnicity"]
-indicators: []
+indicators:
+  - header: null
+    IndicatorID: null
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 None

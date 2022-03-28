@@ -5,10 +5,12 @@ draft: false
 tags: 
 categories: ["airquality","transportation"]
 keywords: ["air quality","pollution","emissions","exhaust","pollutants","pm2.5","asthma","breathing","lungs","asthma","respiratory","illness","hospitalizations","emergency department visits"]
-indicators: []
+indicators:
+  - header: null
+    IndicatorID: null
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 [OneNYC](http://www1.nyc.gov/html/onenyc/index.html) is a comprehensive sustainability plan for New York City's future.

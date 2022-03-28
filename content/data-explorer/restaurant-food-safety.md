@@ -7,10 +7,13 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["foodanddrink"]
 keywords: ["food","restaurants","safety","food and drink","drink","inspection"]
-indicators: [{"subtopic_id": 98, "internal_id": 2065, "name": "Restaurants with A Grades", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2065,719b87,98,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2065
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 New York City has approximately 24,000 restaurants that the Health Department inspects every year to monitor compliance with city and state food safety regulations. At the end of an inspection, the Health Department gives restaurants a score, which is eventually converted to a grade of A, B or C. This site describes the distribution of A grades across New York City restaurants.

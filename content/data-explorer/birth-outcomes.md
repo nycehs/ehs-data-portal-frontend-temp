@@ -7,10 +7,22 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["childhealth","healthoutcomes"]
 keywords: ["children","birth","birth defects","babies","pregnancy"]
-indicators: [{"subtopic_id": 12, "internal_id": 5, "name": "Infant Death", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=5,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 4, "name": "Low Birthweight at Full Term", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=4,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 6, "name": "Neonatal Death", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=6,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 7, "name": "Perinatal Death", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=7,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 8, "name": "Postneonatal Death", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=8,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 1, "name": "Preterm Birth", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=1,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 10, "name": "Sex Ratio ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=10,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 9, "name": "Total (Lifetime) Fertility", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=9,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 3, "name": "Very Low Birthweight", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=3,719b87,12,Summarize"}, {"subtopic_id": 12, "internal_id": 2, "name": "Very Preterm Birth", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2,719b87,12,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 5
+      - 4
+      - 6
+      - 7
+      - 8
+      - 1
+      - 10
+      - 9
+      - 3
+      - 2
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Close to 125,000 live births occur in New York City (NYC) each year. Most babies are born healthy, but those born prematurely or with low birth weight are at greater risk of disability or death. This site tracks indicators of fetal growth and development, infant and [perinatal mortality](http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Perinata_mortality), [fertility](http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Fertility) and [sex ratio at birth](http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Sex_Ratio_at_Birth).

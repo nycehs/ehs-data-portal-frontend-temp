@@ -7,10 +7,17 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["childhealth","healthoutcomes"]
 keywords: ["cancer","cancers","children","environmental health"]
-indicators: [{"subtopic_id": 93, "internal_id": 2037, "name": "Acute Lymphocytic Leukemia in Children", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2037,719b87,93,Summarize"}, {"subtopic_id": 93, "internal_id": 2035, "name": "Acute Myeloid Leukemia in Children", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2035,719b87,93,Summarize"}, {"subtopic_id": 93, "internal_id": 2033, "name": "Brain and CNS Cancer in Children", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2033,719b87,93,Summarize"}, {"subtopic_id": 93, "internal_id": 2031, "name": "Leukemia in Children", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2031,719b87,93,Summarize"}, {"subtopic_id": 93, "internal_id": 2039, "name": "Total Cancer in Children", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2039,719b87,93,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2037
+      - 2035
+      - 2033
+      - 2031
+      - 2039
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Cancer begins when cells in a part of the body start to grow out of control. There are many kinds of cancer, but they all start because of out-of-control growth of abnormal cells. Leukemia (cancer of the blood-forming cells) is the most common form of childhood cancer. There are different kinds of childhood leukemia. The most common kinds are [acute lymphocytic leukemia (ALL)](http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Leukemia) and [acute myeloid leukemia (AML)](http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Leukemia). Brain and other nervous system cancers are the second most common types of childhood cancers. Of all childhood cancer, leukemias and brain and other nervous system cancers account for about 50% of cases among children less than 15 years old.

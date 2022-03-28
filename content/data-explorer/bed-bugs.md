@@ -7,10 +7,13 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["housing","pests","neighborhoods"]
 keywords: ["bed bugs","pests","housing","maintenance deficiencies"]
-indicators: [{"subtopic_id": 92, "internal_id": 2030, "name": "Adults Reporting Bed Bugs in their Home", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2030,719b87,92,Summarize"}]
+indicators:
+  - header: 
+    IndicatorID:
+      - 2030
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Bed bugs are small insects that feed mainly on human blood. They are often confused with other insects, and many people are not even aware of their presence until they have been bitten. However, not everyone has a reaction to bed bug bites. You may not discover that you have bed bugs until you see other signs of the pests such as, bed bugs themselves, their eggs or droppings, or the blood stains they leave behind in mattresses, box springs, chairs or other materials.
