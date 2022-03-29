@@ -9,10 +9,7 @@ categories: ["housing","social","neighborhoods"]
 keywords: ["built environments","neighborhoods","active design","safety","social","housing"]
 indicators:
   - header: null
-    IndicatorID:
-      - 2002
-      - 2003
-      - 2004
+    IndicatorID: null
 menu:
   main:
     identifier: '03'

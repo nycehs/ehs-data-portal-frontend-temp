@@ -108,22 +108,23 @@
 
                         {{ $indicators_json := (resources.GetRemote "https://raw.githubusercontent.com/nychealth/EHDP-data/main/indicators/indicators.json") | transform.Unmarshal }}
 
+                        <script>console.log("$indicators_json", {{ $indicators_json }} )</script>
 
                         {{/*  get subtopic's indicator IDs from content front matter - for filtering indicators.json  */}}
 
-                        {{ $all_indicators := slice }}
+                        {{ $frontmatter_indicators := slice }}
 
                         {{ range .Params.indicators}}
 
                             {{ range .IndicatorID}}
 
-                                {{ $all_indicators = $all_indicators | append  . }}
+                                {{ $frontmatter_indicators = $frontmatter_indicators | append  . }}
 
                             {{ end }}
 
                         {{ end }}
                         
-                        <script>console.log( {{ $all_indicators }} )</script>
+                        <script>console.log("$frontmatter_indicators",  {{ $frontmatter_indicators }} )</script>
 
 
                         {{/*  get subtopic's IndicatorID and IndicatorName from indicators.json  */}}
@@ -132,7 +133,7 @@
 
                         {{ range $index, $value := $indicators_json }}
 
-                            {{ if in $all_indicators $value.IndicatorID }}
+                            {{ if in $frontmatter_indicators $value.IndicatorID }}
 
                                 <script>console.log( {{ $value.IndicatorID }} + " | " + {{ $value.IndicatorName }} )</script>
 
@@ -176,6 +177,8 @@
                                 {{ else }}
 
                                     <a class="dropdown-item" href="#{{ $elem_val }}">{{ string $elem_val }}</a>
+
+                                    <script>console.log("$elem_val",  {{ $elem_val }} )</script>
 
                                 {{ end }}
 

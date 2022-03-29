@@ -9,9 +9,7 @@ categories: ["foodanddrink"]
 keywords: ["water","food","drink"]
 indicators:
   - header: null
-    IndicatorID:
-      - 2001
-      - 2009
+    IndicatorID: null
 menu:
   main:
     identifier: '03'

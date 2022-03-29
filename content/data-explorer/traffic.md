@@ -10,9 +10,7 @@ keywords: ["transportation","traffic","cars","trucks","roads","streets","safety"
 indicators:
   - header: null
     IndicatorID:
-      - 2112
       - 2113
-      - 2114
       - 2236
       - 2237
       - 2238

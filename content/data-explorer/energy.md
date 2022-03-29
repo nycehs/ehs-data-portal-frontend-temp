@@ -9,10 +9,7 @@ categories: ["climatehealth"]
 keywords: ["climate","climate chnage","energy"]
 indicators:
   - header: null
-    IndicatorID:
-      - 2005
-      - 2006
-      - 2007
+    IndicatorID: null
 menu:
   main:
     identifier: '03'

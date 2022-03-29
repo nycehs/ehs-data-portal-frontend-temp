@@ -9,8 +9,7 @@ categories: ["climatehealth"]
 keywords: ["climate change","global warming","health","climate","weather-related illness","storms"]
 indicators:
   - header: null
-    IndicatorID:
-      - 776
+    IndicatorID: 
 menu:
   main:
     identifier: '03'

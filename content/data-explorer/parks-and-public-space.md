@@ -9,8 +9,7 @@ categories: ["transportation","neighborhoods"]
 keywords: ["parks","neighborhoods","transportation","green","trees","greenspace"]
 indicators:
   - header: null
-    IndicatorID:
-      - 775
+    IndicatorID: null
 menu:
   main:
     identifier: '03'
