@@ -11,8 +11,8 @@ indicators:
   - header: Asthma triggers
     IndicatorID:
       - 22
-      - 107
       - 2393
+      - 107
 menu:
   main:
     identifier: '03'

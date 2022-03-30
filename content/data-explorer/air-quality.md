@@ -13,9 +13,6 @@ indicators:
       - 92
       - 57
       - 55
-      - 2378
-      - 2379
-      - 2383
   - header: Neighborhood Air Quality
     IndicatorID:
       - 2024

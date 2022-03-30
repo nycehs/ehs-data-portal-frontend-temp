@@ -8,9 +8,7 @@ keywords: ["social justice","social determinants","disparities","injustice","jus
 indicators:
   - header: null
     IndicatorID:
-      - 13
       - 2106
-      - 2107
 menu:
   main:
     identifier: '03'

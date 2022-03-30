@@ -10,12 +10,13 @@ keywords: ["social","social justice","justice","injustice","social conditions","
 indicators:
   - header: null
     IndicatorID:
-      - 2145
+      - 2145 
       - 2176
       - 14
       - 2334
       - 2317
       - 2335
+      - 2106
       - 2146
       - 2073
       - 103
