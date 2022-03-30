@@ -8,7 +8,7 @@ tags:
 categories: ["housing","pests","neighborhoods"]
 keywords: ["bed bugs","pests","housing","maintenance deficiencies"]
 indicators:
-  - header: 
+  - header: null
     IndicatorID:
       - 2030
 menu:

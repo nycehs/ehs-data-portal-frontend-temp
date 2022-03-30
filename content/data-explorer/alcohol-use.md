@@ -8,7 +8,7 @@ tags:
 categories: ["foodanddrink"]
 keywords: ["drink","alcohol","binge drinking"]
 indicators:
-  - header: 
+  - header: null
     IndicatorID:
       - 2050
       - 2051

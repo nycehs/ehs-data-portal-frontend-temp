@@ -9,7 +9,7 @@ categories: ["transportation","neighborhoods"]
 keyTopic: transportation
 keywords: ["active design","infrastructure","transportation","physical activity","health"]
 indicators:
-  - header: 
+  - header: null
     IndicatorID: 
       - 2390
       - 2181
