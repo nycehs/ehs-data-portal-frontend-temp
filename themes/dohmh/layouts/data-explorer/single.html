@@ -127,7 +127,7 @@
                         <script>console.log("$frontmatter_indicators",  {{ $frontmatter_indicators }} )</script>
 
 
-                        {{/*  get subtopic's IndicatorID and IndicatorName from indicators.json  */}}
+                        {{/*  get subtopic's IndicatorID and IndicatorLabel from indicators.json  */}}
 
                         {{ $indicators_map := newScratch }}
 
@@ -135,11 +135,11 @@
 
                             {{ if in $frontmatter_indicators $value.IndicatorID }}
 
-                                <script>console.log( {{ $value.IndicatorID }} + " | " + {{ $value.IndicatorName }} )</script>
+                                <script>console.log( {{ $value.IndicatorID }} + " | " + {{ $value.IndicatorLabel }} )</script>
 
                                 {{/*  create map with IDs and Names - can modify to get more fields  */}}
 
-                                {{ $indicators_map.Set (string $value.IndicatorID) $value.IndicatorName }}
+                                {{ $indicators_map.Set (string $value.IndicatorID) $value.IndicatorLabel }}
 
                             {{ end }}
 
@@ -189,7 +189,7 @@
                         </div>
                     </div>
 
-                    {{/*  setting header to first IndicatorName  */}}
+                    {{/*  setting header to first IndicatorLabel  */}}
 
                     <h3>{{ index $indicator_names 0 }}</h3>
 
