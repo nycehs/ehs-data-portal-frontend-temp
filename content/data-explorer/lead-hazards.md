@@ -7,10 +7,17 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["housing","childhealth","social","neighborhoods"]
 keywords: ["lead","poisoning","children","housing"]
-indicators: [{"subtopic_id": 4, "internal_id": 2176, "name": "Children under 5 years old in Poverty", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2176,719b87,4,Summarize"}, {"subtopic_id": 4, "internal_id": 16, "name": "Pre-1950 Homes", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=16,719b87,4,Summarize"}, {"subtopic_id": 4, "internal_id": 41, "name": "Pre-1960 Homes with Peeling Paint", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=41,719b87,4,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2176
+      - 16
+  - header: Maintenance
+    IndicatorID:
+      - 41
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 The main source of childhood lead poisoning in NYC, as in most of the United States, is lead-based paint in older, deteriorated housing. Nationwide, lead poisoning is associated with housing constructed before 1950, when lead-based paint was widely used and contained more lead than in later decades. In 1960, NYC banned the use of lead-based paint in homes and a national ban went into effect in 1978. Older layers of lead paint may still be present in older buildings and can become a lead hazard when the paint chips, peels or is abraded, or when renovations or repairs are conducted without taking appropriate actions to control dust. Families residing in older, poorly maintained housing are at higher risk for lead poisoning.

@@ -9,6 +9,13 @@ theme = "dohmh"
 publishDir = "docs"
 paginate = 9
 
+# disable cache for GetResource - loads indicators.json from github every time
+
+[caches]
+  [caches.getresource]
+    dir = ':cacheDir/:project'
+    maxAge = 0
+
 [taxonomies]
   tag = "tags"
   category = "categories"

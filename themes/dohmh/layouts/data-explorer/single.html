@@ -95,18 +95,103 @@
 
                 </div>
 
+
                 <div class="col-md-8">
                     <div class="dropdown float-right">
                         <button class="btn btn-outline-primary float-right dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-align:right!important">
                           More {{ .Title}} data
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        {{ range .Params.Indicators}}
-                          <a class="dropdown-item" href="{{ .URL}}">{{ .name}}</a>
+
+
+                        {{/*  get indicators.json and turn it into a usable map object  */}}
+
+                        {{ $indicators_json := (resources.GetRemote "https://raw.githubusercontent.com/nychealth/EHDP-data/main/indicators/indicators.json") | transform.Unmarshal }}
+
+                        <script>console.log("$indicators_json", {{ $indicators_json }} )</script>
+
+                        {{/*  get subtopic's indicator IDs from content front matter - for filtering indicators.json  */}}
+
+                        {{ $frontmatter_indicators := slice }}
+
+                        {{ range .Params.indicators}}
+
+                            {{ range .IndicatorID}}
+
+                                {{ $frontmatter_indicators = $frontmatter_indicators | append  . }}
+
+                            {{ end }}
+
                         {{ end }}
+                        
+                        <script>console.log("$frontmatter_indicators",  {{ $frontmatter_indicators }} )</script>
+
+
+                        {{/*  get subtopic's IndicatorID and IndicatorLabel from indicators.json  */}}
+
+                        {{ $indicators_map := newScratch }}
+
+                        {{ range $index, $value := $indicators_json }}
+
+                            {{ if in $frontmatter_indicators $value.IndicatorID }}
+
+                                <script>console.log( {{ $value.IndicatorID }} + " | " + {{ $value.IndicatorLabel }} )</script>
+
+                                {{/*  create map with IDs and Names - can modify to get more fields  */}}
+
+                                {{ $indicators_map.Set (string $value.IndicatorID) $value.IndicatorLabel }}
+
+                            {{ end }}
+
+                        {{ end }}
+
+
+                        {{/*  construct dropdown by looping through front matter indicators  */}}
+
+                        {{ $indicator_names := slice }}
+
+                        {{ range .Params.indicators}}
+
+                            {{/*  if this subtopic has headers, insert the headers as h4's */}}
+
+                            {{ if .header }}
+                            
+                                <h4 class="dropdown-header">{{ .header }}</h4>
+
+                            {{ end }}
+
+                            {{/*  now insert the indicators as list items  */}}
+
+                            {{ range $elem_index, $elem_val := .IndicatorID }}
+
+                                {{/* check if indicator exists in indicators.json - if not, insert IndicatorID (for debugging) */}}
+
+                                {{ if $indicators_map.Get (string $elem_val) }}
+
+                                    <a class="dropdown-item" href="#{{ $elem_val }}">{{ $indicators_map.Get (string $elem_val) }}</a>
+
+                                    {{/*  save slice with names to index for header  */}}
+
+                                    {{ $indicator_names = $indicator_names | append ($indicators_map.Get (string $elem_val)) }}
+                                
+                                {{ else }}
+
+                                    <a class="dropdown-item" href="#{{ $elem_val }}">{{ string $elem_val }}</a>
+
+                                    <script>console.log("$elem_val",  {{ $elem_val }} )</script>
+
+                                {{ end }}
+
+                            {{ end }}
+
+                        {{ end }}
+
                         </div>
                     </div>
-                    <h3>{{ (index .Params.indicators 0).name }}</h3>
+
+                    {{/*  setting header to first IndicatorLabel  */}}
+
+                    <h3>{{ index $indicator_names 0 }}</h3>
 
 
                     <div style="clear:both" class="my-3">

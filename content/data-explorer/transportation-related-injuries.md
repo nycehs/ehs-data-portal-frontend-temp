@@ -7,10 +7,16 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["transportation","healthoutcomes"]
 keywords: ["transportation","traffic","cars","trucks","roads","streets","safety","emissions","driving","cars","hospitalizations","emergency department visits","biking","cycling","bikes"]
-indicators: [{"subtopic_id": 101, "internal_id": 2092, "name": "Bicycle Injury Emergency Department Visits", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2092,719b87,101,Summarize"}, {"subtopic_id": 101, "internal_id": 2086, "name": "Bicycle Injury Hospitalizations", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2086,719b87,101,Summarize"}, {"subtopic_id": 101, "internal_id": 2094, "name": "Pedestrian Injury Emergency Department Visits", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2094,719b87,101,Summarize"}, {"subtopic_id": 101, "internal_id": 2093, "name": "Pedestrian Injury Hospitalizations", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2093,719b87,101,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2092
+      - 2086
+      - 2094
+      - 2093
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Traffic injuries are no accident. Like other public health concerns, they are preventable through data driven solutions. In NYC, traffic injuries, which include injuries among pedestrians, bicyclists, motorcyclists, and motor vehicle occupants, are a leading cause of injury-related hospitalizations and emergency department visits.

@@ -7,10 +7,12 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["climatehealth"]
 keywords: ["climate change","global warming","health","climate","weather-related illness","storms"]
-indicators: [{"subtopic_id": 83, "internal_id": 776, "name": "Greenhouse Gas Emissions", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=776,719b87,83,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID: 
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 There is broad consensus within the scientific community that human activity is changing the Earth's climate through **increasing concentrations of greenhouse gases (GHGs)** — primarily carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and chlorofluorocarbons (CFCs) — in the atmosphere.

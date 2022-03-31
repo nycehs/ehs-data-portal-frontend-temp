@@ -7,10 +7,14 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["housing","childhealth"]
 keywords: ["carbon","monoxide","poisoning","hospitalization","emergency department visits","children","housing"]
-indicators: [{"subtopic_id": 51, "internal_id": 38, "name": "Carbon Monoxide Incidents ", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=38,719b87,51,Summarize"}, {"subtopic_id": 51, "internal_id": 2168, "name": "Carbon Monoxide Incidents without a Detector (3 Year Avg.)", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2168,719b87,51,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 38
+      - 2168
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned.  It is invisible and has no odor.  Even short-term exposure to high levels of carbon monoxide can be fatal.

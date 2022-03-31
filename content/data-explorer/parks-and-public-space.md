@@ -7,10 +7,12 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["transportation","neighborhoods"]
 keywords: ["parks","neighborhoods","transportation","green","trees","greenspace"]
-indicators: [{"subtopic_id": 78, "internal_id": 775, "name": "Park Distance", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=775,719b87,78,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID: null
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 [OneNYC](http://www1.nyc.gov/html/onenyc/index.html) is a comprehensive sustainability plan for New York City's future.

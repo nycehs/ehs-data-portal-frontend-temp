@@ -7,10 +7,16 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["foodanddrink"]
 keywords: ["drink","alcohol","binge drinking"]
-indicators: [{"subtopic_id": 97, "internal_id": 2050, "name": "Adults Reporting Heavy Drinking", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2050,719b87,97,Summarize"}, {"subtopic_id": 97, "internal_id": 2051, "name": "Adults Who Binge Drink", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2051,719b87,97,Summarize"}, {"subtopic_id": 97, "internal_id": 2056, "name": "Underage Drinking", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2056,719b87,97,Summarize"}, {"subtopic_id": 97, "internal_id": 2055, "name": "Youth Who Binge Drink", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2055,719b87,97,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2050
+      - 2051
+      - 2056
+      - 2055
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Heavy regular drinking and binge drinking contribute to a wide range of chronic health problems, including heart disease, diabetes, cancer, stroke, cirrhosis, depression and dementia. Alcohol use is also associated with suicide, homicide, domestic violence, sexually transmitted diseases and injuries. It is one of the leading behavior-related causes of death in New York City (NYC).

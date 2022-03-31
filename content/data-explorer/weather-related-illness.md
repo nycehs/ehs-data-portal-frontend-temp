@@ -7,10 +7,24 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["social","climatehealth","healthoutcomes"]
 keywords: ["weather-related illness","climate change","heat","hot weather","cold weather","cold","mortality","social","hospitalizations","emergency department visits","summer","winter"]
-indicators: [{"subtopic_id": 100, "internal_id": 2410, "name": "5-Year Heat Stress Hospitalizations", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2410,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2376, "name": "Cold Stress Deaths", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2376,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2175, "name": "Cold Stress Emergency Department Visits", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2175,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2174, "name": "Cold Stress Hospitalizations", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2174,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2084, "name": "Heat Events", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2084,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2074, "name": "Heat Stress Deaths", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2074,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2075, "name": "Heat Stress Emergency Department Visits", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2075,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2076, "name": "Heat Stress Hospitalizations", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2076,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2411, "name": "Heat Vulnerability Index by NTA", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2411,719b87,100,Summarize"}, {"subtopic_id": 100, "internal_id": 2191, "name": "Heat Vulnerability Index", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2191,4466a0,100,Summarize"}]
+indicators:
+  - header: Cold Stress
+    IndicatorID:
+      - 2376
+      - 2175
+      - 2174
+  - header: Heat Stress
+    IndicatorID:
+      - 2410
+      - 2084
+      - 2074
+      - 2075
+      - 2076
+      - 2191
+      - 2411
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 A region's climate is characterized by its usual weather conditions, seasons, and patterns in extreme weather events such as heat waves, droughts, and hurricanes. New York City (NYC) faces public health risks from extreme weather events such as heat waves and coastal storms. With climate change, the severity of some of these risks will increase. A 2013 New York City Panel on Climate Change (NPCC) report predicts that by the 2020s, average summer temperatures in New York City will increase by 2.0°F to 3.0°F compared to a 1971-2000 baseline. Heat waves will become more frequent, intense, and longer in duration. Rainfall and precipitation are expected to increase, together with another 4-8 inches of sea level rise and increased probability of coastal storms with flooding (NPCC, Climate Risk Information, 2013).

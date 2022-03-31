@@ -7,10 +7,20 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["housing","childhealth"]
 keywords: ["smoking","cigarettes","cancer","secondhand","smoke","work","home", "children"]
-indicators: [{"subtopic_id": 36, "internal_id": 25, "name": "Adults Reporting Secondhand Smoke at Home", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=25,719b87,36,Summarize"},{"subtopic_id": 3, "internal_id": 2338, "name": "Adults Reporting Secondhand Smoke at Home from Outside Sources", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2338,719b87,3,Summarize"}, {"subtopic_id": 3, "internal_id": 2020, "name": "Adults Reporting Secondhand Smoke at Work", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2020,719b87,3,Summarize"}, {"subtopic_id": 3, "internal_id": 2017, "name": "Adults without a Smoke-Free Home Policy", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2017,719b87,3,Summarize"}, {"subtopic_id": 3, "internal_id": 2019, "name": "Cigarette Smoking among Adults", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2019,719b87,3,Summarize"}, {"subtopic_id": 3, "internal_id": 2021, "name": "Cigarette Smoking among Youths", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2021,719b87,3,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2338
+      - 2020
+      - 2017
+      - 2019
+      - 2021
+  - header: Asthma triggers
+    IndicatorID:
+      - 25
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Cigarette smoke contains over 250 toxic chemicals, more than 50 of which cause cancer. Secondhand smoke is a dangerous combination of the smoke from the burning of a cigarette, pipe, or cigar, and the smoke exhaled by a smoker. There is no safe level of secondhand smoke exposure. Even brief exposure can be harmful.

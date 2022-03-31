@@ -8,10 +8,14 @@ seo_description: "Explore data, visualizations, and more."
 tags: 
 categories: ["foodanddrink","neighborhoods"]
 keywords: ["drink","alcohol","neighborhoods"]
-indicators: [{"subtopic_id": 95, "internal_id": 2049, "name": "Access to Alcohol", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2049,719b87,95,Summarize"}, {"subtopic_id": 95, "internal_id": 2057, "name": "Youth Access to Alcohol", "URL": "https://a816-dohbesp.nyc.gov/IndicatorPublic/VisualizationData.aspx?id=2057,719b87,95,Summarize"}]
+indicators:
+  - header: null
+    IndicatorID:
+      - 2049
+      - 2057
 menu:
-    main:
-        identifier: '03'
+  main:
+    identifier: '03'
 ---
 
 Heavy regular drinking and binge drinking contribute to a wide range of chronic health problems, including heart disease, diabetes, cancer, stroke, cirrhosis, depression and dementia. Alcohol use is also associated with suicide, homicide, domestic violence, sexually transmitted diseases and injuries. It is one of the leading behavior-related causes of death in New York City (NYC).
