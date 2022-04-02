@@ -52,6 +52,15 @@ Alcohol and the EnvironmentGreater alcohol outlet density has been associated wi
     </item>
     
     <item>
+      <title>All Data Sets</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/all-data/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/all-data/</guid>
+      <description>Browse all data sets on the Environment and Health Data Portal.</description>
+    </item>
+    
+    <item>
       <title>Asthma</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
