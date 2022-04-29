@@ -32,6 +32,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
+      - name: Build
+        run: hugo --environment local
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
