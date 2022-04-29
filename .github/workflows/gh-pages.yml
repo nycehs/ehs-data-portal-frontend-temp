@@ -2,25 +2,26 @@ name: GitHub Pages
 
 on:
   pull_request:
-    types:
-      - closed
     branches:
       - development 
+    types:
+      - closed
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    name: Deploy job 1
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
-      - name: checkout
+      - name: checkout 1
         uses: actions/checkout@v3
-        with:
-          submodules: recursive  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+        # with:
+        #   submodules: recursive  # Fetch Hugo themes (true OR recursive)
+        #   fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Hugo setup
+      - name: Hugo setup 1
         uses: peaceiris/actions-hugo@v2.4.13
         with:
           hugo-version: '0.97.0'
@@ -34,7 +35,7 @@ jobs:
       #     restore-keys: |
       #       ${{ runner.os }}-hugomod-
 
-      - name: Build
+      - name: Build 1
         run: hugo --environment local
 
       # - name: Deploy
