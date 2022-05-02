@@ -13,7 +13,7 @@
       <pubDate>Wed, 08 Sep 2021 10:59:52 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/neighborhoods/</guid>
-      <description>Our neighborhoods are the world around us. The build environment and the social environment where we spend most of our time affect health.</description>
+      <description>Our neighborhoods are the world around us. The built environment and the social environment where we spend most of our time affect health.</description>
     </item>
     
     <item>
@@ -260,6 +260,51 @@ NYCCAS tells us that more traffic means more air pollution nearby. So, even if w
       <description>Poverty affects health in many ways. In New York City, the story of asthma clearly illustrates this connection.
 To understand the connection between poverty and asthma, take a look at this map of poverty rates in New York City, below. The darker the color, the more residents living in poverty.
   !function () { &#34;use strict&#34;; window.addEventListener(&#34;message&#34;, function (a) { if (void 0 !== a.data[&#34;datawrapper-height&#34;]) for (var e in a.</description>
+    </item>
+    
+    <item>
+      <title>Active Design, Physical Activity and Health</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/activedesign/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/activedesign/</guid>
+      <description>The design and conditions of buildings, streets, public transportation and parks influence physical activity, use of active transportation and other healthy behavior. A neighborhood&amp;rsquo;s features can also impact the safety of its residents.</description>
+    </item>
+    
+    <item>
+      <title>Asthma and the Environment</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/asthma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/asthma/</guid>
+      <description>Asthma is a common lung disease and a leading cause of hospitalizations for children under 15 years old. This report provides a summary of asthma indicators by neighborhood. It also describes housing and neighborhood characteristics that can make asthma worse.</description>
+    </item>
+    
+    <item>
+      <title>Climate and Health</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/climateandhealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/climateandhealth/</guid>
+      <description>Extreme heat, coastal storms, flooding and episodes of elevated ozone are climate-related hazards that may increase with climate change and have important public health impacts in New York City. Extreme weather can cause power outages, which also threaten public health. This report provides neighborhood indicators of climate-related hazards, vulnerability and health impacts.</description>
+    </item>
+    
+    <item>
+      <title>Housing and Health in NYC</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/housing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/housing/</guid>
+      <description>This report provides a neighborhood summary of housing conditions and related health outcomes. It also describes population characteristics that can increase vulnerability to housing hazards.</description>
+    </item>
+    
+    <item>
+      <title>Outdoor Air and Health in NYC</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/outdoorair/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/neighborhood-reports/outdoorair/</guid>
+      <description>Air pollution is one of the most important environmental threats to urban populations and while all people are exposed, pollutant emissions, levels of exposure, and population vulnerability vary across neighborhoods. Exposures to common air pollutants have been linked to respiratory and cardiovascular diseases, cancers, and premature deaths.</description>
     </item>
     
   </channel>
