@@ -8485,7 +8485,7 @@ legend,
   .matrix-gutter > [class^="col"] {
     padding: 0.5rem; }
 
-.accordion-group a[data-toggle="collapse"]:after, .btn-toggle [data-toggle="collapse"]::after {
+table .group td.hidden::before, table .group td::before, .accordion-group a[data-toggle="collapse"]:after, .btn-toggle [data-toggle="collapse"]::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: inherit;
@@ -9716,6 +9716,17 @@ th.tablehead {
 .no-bullets {
   padding-left: 0px;
   list-style-type: none; }
+
+table .group td {
+  background-color: #F0F0F0;
+  color: #669DB1;
+  font-weight: bold; }
+  table .group td:not(.hidden)::before {
+    content: "\f068"; }
+  table .group td.hidden::before {
+    content: "\f067"; }
+  table .group td:hover {
+    cursor: pointer; }
 
 a {
   color: #00923E; }
