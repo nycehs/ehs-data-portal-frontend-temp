@@ -186,7 +186,7 @@
 
             <div class="medium my-auto">
                 <h1 class="titleheader py-2 px-4">
-                    将健康数据映射到纽约市的社区
+                    环境与健康数据门户上的社区边界
                 </h1>
             </div>
 
@@ -281,12 +281,11 @@
 <p>纽约市有55个PUMA。PUMA与社区单元具有相似的边界，这意味着通常可以将其中一个用作另一个方案的替代。在下面的地图中，请注意位于Greenpoint/Williamsburg的Brooklyn CD 1与PUMA几乎相同。</p>
 <p>四个PUMA区域是由两个CD区域合二为一。请注意South Bronx区的两个CD区域是如何合并成一个 PUMA区域。</p>
 <p>每个PUMA都细分为社区制表区（NTA），每个NTA进一步细分为人口普查区。</p>
-<p>Each PUMA breaks down into Neighborhood Tabulation Areas (NTAs), and each NTA breaks down even further into census tracts.</p>
 
 
 <input type="radio" name="mainRadioGroup" value="CD" id="ucd" checked> <label for="ucd">社区单元</label> &nbsp;&nbsp;
-<input type="radio" name="mainRadioGroup" value="PUMA" id="upuma"/> <label for="upuma">PUMAs</label> &nbsp;&nbsp;
-<input type="radio" name="mainRadioGroup" value="nta" id="unta"> <label for="unta">NTAs</label>
+<input type="radio" name="mainRadioGroup" value="PUMA" id="upuma"/> <label for="upuma">PUMA</label> &nbsp;&nbsp;
+<input type="radio" name="mainRadioGroup" value="nta" id="unta"> <label for="unta">NTA</label>
 
 <script>
 let cdSpec = "mapcd.vl.json";
@@ -379,7 +378,7 @@ function buildMap2(spec) {
 </script>
 <h3 id="当边界重叠时如何选择">当边界重叠时如何选择？</h3>
 <p>这些不同的社区边界会使事情变得令人困惑。例如，假设您住在Ditmas Park，并且您想将一些健康数据带到您的社区委员会的一场会议上。Ditmas Park是位于Flatbush/Midwood的社区单元14的一部分。但CD14跨越两个不同的UHF社区。</p>
-<p>我们有一<a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/CommunityDistrict.aspx">个工具可以帮助您查看重叠和差异</a>，以便您可以选择使用哪种社区方案进行报告，但它仍然提出了一个难题：您会带哪些社区的数据参加您的社区委员会会议？</p>
+<p><a href="https://a816-dohbesp.nyc.gov/IndicatorPublic/CommunityDistrict.aspx">我们有一个工具可以帮助您查看重叠和差异</a>，以便您可以选择使用哪种社区方案进行报告，但它仍然提出了一个难题：您会带哪些社区的数据参加您的社区委员会会议？</p>
 <figure><img src="overlap.png"
          alt="An example of a Community District that overlaps two UHF42 neighborhoods."/>
 </figure>
@@ -449,7 +448,7 @@ function buildMap2(spec) {
     <ul class="share-icons">
       
       <li>
-        <a href="https://twitter.com/intent/tweet?&amp;url=https%3a%2f%2fnycehs.github.io%2fehs-data-portal-frontend-temp%2fcn%2fdata-stories%2fgeographies%2f&amp;text=%e5%b0%86%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e6%98%a0%e5%b0%84%e5%88%b0%e7%ba%bd%e7%ba%a6%e5%b8%82%e7%9a%84%e7%a4%be%e5%8c%ba" target="_blank" rel="noopener" aria-label="Share on Twitter" class="share-btn twitter">
+        <a href="https://twitter.com/intent/tweet?&amp;url=https%3a%2f%2fnycehs.github.io%2fehs-data-portal-frontend-temp%2fcn%2fdata-stories%2fgeographies%2f&amp;text=%e7%8e%af%e5%a2%83%e4%b8%8e%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e9%97%a8%e6%88%b7%e4%b8%8a%e7%9a%84%e7%a4%be%e5%8c%ba%e8%be%b9%e7%95%8c" target="_blank" rel="noopener" aria-label="Share on Twitter" class="share-btn twitter">
           <i class="fab fa-twitter-square fs-xl"></i>
           <p>Twitter</p>
           </a>
@@ -473,7 +472,7 @@ function buildMap2(spec) {
 
       
       <li>
-        <a href="mailto:?subject=Environment%20%26%20Health%20Data%20Portal - %e5%b0%86%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e6%98%a0%e5%b0%84%e5%88%b0%e7%ba%bd%e7%ba%a6%e5%b8%82%e7%9a%84%e7%a4%be%e5%8c%ba.&amp;body=%e5%b0%86%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e6%98%a0%e5%b0%84%e5%88%b0%e7%ba%bd%e7%ba%a6%e5%b8%82%e7%9a%84%e7%a4%be%e5%8c%ba%2c%20by%20Environment%20%26%20Health%20Data%20Portal%0a%3cnil%3e%0a%0ahttps%3a%2f%2fnycehs.github.io%2fehs-data-portal-frontend-temp%2fcn%2fdata-stories%2fgeographies%2f%0a" target="_blank" class="share-btn email">
+        <a href="mailto:?subject=Environment%20%26%20Health%20Data%20Portal - %e7%8e%af%e5%a2%83%e4%b8%8e%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e9%97%a8%e6%88%b7%e4%b8%8a%e7%9a%84%e7%a4%be%e5%8c%ba%e8%be%b9%e7%95%8c.&amp;body=%e7%8e%af%e5%a2%83%e4%b8%8e%e5%81%a5%e5%ba%b7%e6%95%b0%e6%8d%ae%e9%97%a8%e6%88%b7%e4%b8%8a%e7%9a%84%e7%a4%be%e5%8c%ba%e8%be%b9%e7%95%8c%2c%20by%20Environment%20%26%20Health%20Data%20Portal%0a%3cnil%3e%0a%0ahttps%3a%2f%2fnycehs.github.io%2fehs-data-portal-frontend-temp%2fcn%2fdata-stories%2fgeographies%2f%0a" target="_blank" class="share-btn email">
           <i class="fas fa-envelope fs-xl"></i>
           <p>Email</p>
         </a>

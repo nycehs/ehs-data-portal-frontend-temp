@@ -14,7 +14,7 @@
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/es/data-stories/geographies/</guid>
       <description>La ciudad de Nueva York posee cientos de vecindarios y casi la misma cantidad de formas de diagramar los límites de los vecindarios. Cuando visita el Portal de Datos Ambientales y Sanitarios u otros recursos de datos del Departamento de Salud (Health Department), es posible que note que la información está disponible en diferentes esquemas de vecindarios.
-Por ejemplo, si busca en las páginas de datos sobre asma, encontrará que NTA ofrece datos sobre Adultos con asma presentados a través de los vecindarios de UHF34, Niños de escuelas públicas con asma presentados a través de los vecindarios de UHF42 y Visitas por asma a la sala de emergencias - FLAG INCOMPLETE SENTENCE?</description>
+Por ejemplo, si busca en las páginas de datos sobre asma, encontrará que los adultos con asma se presentan por vecindario de UHF34, los niños de escuelas públicas con asma se presentan por vecindarios de UHF42 y las visitas por asma a la sala de emergencias se ofrecen por NTA.</description>
     </item>
     
   </channel>
