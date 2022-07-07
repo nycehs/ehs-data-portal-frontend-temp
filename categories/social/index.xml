@@ -19,13 +19,14 @@ But the power is out. Without the nebulizer, your child’s breathing gets worse
     </item>
     
     <item>
-      <title>Social and Economic Conditions</title>
+      <title>Inequality and health inequities</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/social/</link>
       <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/social/</guid>
-      <description>Social and economic conditions affect people’s health. These conditions (also called “social determinants of health”) are conditions that people may be born into or fall into over the course of their lives. They are shaped by local, national and global distribution of resources and power.
-People tend to be healthier when they have access to economic and financial stability, higher education, adequate health care, healthy neighborhoods, and safe, strong communities.</description>
+      <description>Inequality is a significant driver of bad health: a society that deprives people of resources to stay healthy is a society where many people become sick, injured, or die because of factors outside of their control.
+People tend to be healthier when they have access to economic and financial stability, higher education, adequate health care, healthy neighborhoods, and safe, strong communities.
+Health inequities are systematic differences in health outcomes that result from differences in access to the conditions that keep people healthy.</description>
     </item>
     
     <item>
@@ -38,13 +39,23 @@ People tend to be healthier when they have access to economic and financial stab
     </item>
     
     <item>
-      <title>Childhood Lead Exposure</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</link>
+      <title>Asthma</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</guid>
-      <description>Childhood lead poisoning is a serious but preventable public health problem. Lead is a toxic metal that can cause learning and behavior problems, and delay physical growth and mental development. Testing for lead poisoning is a key component of childhood lead poisoning prevention, since most children with elevated blood lead levels exhibit no symptoms.
-This site provides data on blood lead testing and on elevated blood lead levels among NYC children.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma/</guid>
+      <description>Asthma is a common disease in which the lungs become swollen, making breathing difficult. Symptoms include wheezing, coughing, shortness of breath and tightness in the chest. The exact causes of asthma are not known. Asthma cannot be cured, but it can be controlled.
+Asthma is a leading cause of emergency room visits, hospitalizations and missed school days in New York City&amp;rsquo;s poorest neighborhoods. In NYC, asthma is more common among low-income Black and Latino children.</description>
+    </item>
+    
+    <item>
+      <title>Asthma triggers at home</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</guid>
+      <description>Housing conditions can trigger asthma. In New York City, childhood asthma is a significant health threat that affects thousands of children per year.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.</description>
     </item>
     
     <item>
@@ -53,38 +64,70 @@ This site provides data on blood lead testing and on elevated blood lead levels 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/health-care/</guid>
-      <description>More information coming soon. </description>
+      <description>Health care is a valuable tool to stay healthy.
+Health insurance coverage is associated with many health benefits. People with health insurance are more likely to have a regular doctor, receive preventive care services, better manage chronic health conditions, have longer life expectancy, and more.
+However, not all New Yorkers can access appropriate amounts of care. Many New Yorkers remain uninsured. People without access to appropriate health care don&amp;rsquo;t receive the care they need to stay healthy.</description>
     </item>
     
     <item>
-      <title>Housing</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</link>
+      <title>Health Impacts of Air Pollution</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/health-impacts-of-air-pollution/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</guid>
-      <description>No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.
-In New York City, substandard or poor housing tends to cluster in neighborhoods. Homes that are deteriorating or dilapidated, or homes near buildings with broken or boarded-up windows, disproportionately tend to be in low-income neighborhoods, although the differences for these indicators have decreased.
-Housing and Health Housing quality impacts health directly and indirectly.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/health-impacts-of-air-pollution/</guid>
+      <description>Air pollution is an important environmental threat to the health of New York City residents. Exposures to two common air pollutants, fine particulate matter (PM2.5) and ozone (O3), can worsen respiratory illness and heart conditions and contribute to premature deaths. Older adults, children and people with existing heart and lung disease are especially affected. This site provides estimates of the impact of air pollution on the health of NYC residents as measured by the numbers of emergency department visits, hospitalizations, and deaths attributable to PM2.</description>
     </item>
     
     <item>
-      <title>Housing and Neighborhoods</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</link>
+      <title>Housing maintenance</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Create homes for nearly a million more New Yorkers while making housing and neighborhoods more affordable and sustainable.
-Housing Supply We are tracking the number of new housing units created since the start of the plan in 2007, as well as the size of the total housing stock, to ensure that the city is meeting the supply portion of its goal.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</guid>
+      <description>Buildings with maintenance issues and disrepair can harm health. Across NYC, low-income neighborhoods have a higher percentage of buildings in disrepair due to past and present disinvestment and housing discrimination. This housing disrepair harms residents&amp;rsquo; health.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury. All building owners are required by law to provide essential services such as heat and hot water, make timely repairs, and maintain a pest-free building.</description>
     </item>
     
     <item>
-      <title>Lead Hazards</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</link>
+      <title>Housing safety</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</guid>
-      <description>The main source of childhood lead poisoning in NYC, as in most of the United States, is lead-based paint in older, deteriorated housing. Nationwide, lead poisoning is associated with housing constructed before 1950, when lead-based paint was widely used and contained more lead than in later decades. In 1960, NYC banned the use of lead-based paint in homes and a national ban went into effect in 1978. Older layers of lead paint may still be present in older buildings and can become a lead hazard when the paint chips, peels or is abraded, or when renovations or repairs are conducted without taking appropriate actions to control dust.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health - both in terms of safety characteristics within the home, and in terms of factors that affect housing stability.
+Safety characteristics A home&amp;rsquo;s safety characteristics might include:
+ Air conditioning, which is a vital tool to protect people who are at risk of heat-related illness and death Electric medical equipment.</description>
+    </item>
+    
+    <item>
+      <title>Housing stability</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health.
+Housing stability In NYC, about one out of every three homes is owned by the person living there - about half the national average. Owning a home is a powerful way to build intergenerational wealth, but historical and contemporary disinvestment and housing discrimination has made it hard for many New Yorkers to own homes.</description>
+    </item>
+    
+    <item>
+      <title>Lead poisoning</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</guid>
+      <description>Lead is a metal that is toxic to people. There is no safe level of lead in your body. It can cause learning and behavior problems, and delay physical growth and mental development.
+In the past, it was used in gasoline, paint, ceramics, caulking, pipes and solder. In 1960, NYC banned the use of lead-based paint in homes. A national ban came into effect in 1978. Leaded gasoline was phased out beginning in the 1970&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Mortality</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/mortality/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/mortality/</guid>
+      <description>Death is, of course, a severe health outcome. Many deaths are preventable.
+Premature mortality lets us look at deaths before age 65. It can be a useful way to indicate the overall health of the population.
+Neonatal deaths, postneonatal deaths, and infant deaths let us look at deaths among the the youngest members of our communities. Infants, with new, developing bodies, can be very susceptible to environmental threats - like poisonings, accidents, and injuries.</description>
     </item>
     
     <item>

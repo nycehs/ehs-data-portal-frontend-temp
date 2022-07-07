@@ -38,15 +38,6 @@ Air quality varies from neighborhood to neighborhood, based on local levels of e
     </item>
     
     <item>
-      <title>NYCCAS report</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/airquality/nyccas/</link>
-      <pubDate>Wed, 08 Sep 2021 11:14:56 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/airquality/nyccas/</guid>
-      <description>NYCCAS Report Goes Here.</description>
-    </item>
-    
-    <item>
       <title>Your Neighborhood&#39;s Air Quality</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/airquality/aqe/</link>
       <pubDate>Tue, 24 Aug 2021 12:04:44 -0400</pubDate>
@@ -54,6 +45,18 @@ Air quality varies from neighborhood to neighborhood, based on local levels of e
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/airquality/aqe/</guid>
       <description>We combine data from our air quality monitoring network, NYCCAS, with other data to understand what makes one neighborhood&amp;rsquo;s air quality different from another&amp;rsquo;s. We found that building emissions, building density, industrial areas, and traffic density are associated with differences in air quality.
 If we don&amp;rsquo;t have an air quality monitor in one neighborhood, but we know its building density, its industrial area, and its traffic, then we can model (estimate or predict) its air quality - based on monitored air quality in similar neighborhoods.</description>
+    </item>
+    
+    <item>
+      <title>Active Design</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/active-design/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/active-design/</guid>
+      <description>Physical activity and healthy eating rank among the leading ways to get and stay healthy.
+Active design is an applied, evidence-informed approach to improve physical, mental and social health outcomes through the design of the built environment.
+To improve health, we can:
+ Increase access to public parks and recreation Create pedestrian plazas, and maintain sidewalks Plant street trees Provide safer cycling infrastructure and secure bicycle storage Make stairways attractive and accessible  Strategies like these can have a measurable effect on people’s ability to safely maintain their physical, mental, and social health.</description>
     </item>
     
     <item>
@@ -83,7 +86,9 @@ Asthma is a leading cause of emergency room visits, hospitalizations and missed 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</guid>
-      <description>More information coming soon.</description>
+      <description>Chronic obstructive pulmonary disease, or COPD, is a group of diseases that include emphysemia and chronic bronchitis.
+These diseases can cause severe breathing problems. Over 16 million Americans have COPD, and it is the third-leading cause of death in the USA.
+Though there is no cure for COPD, it can be treated and managed. One important way to manage COPD is to reduce environmental exposure to things that can exacerbate COPD, like tobacco smoke, indoor air pollution, and outdoor air pollution.</description>
     </item>
     
     <item>
@@ -113,7 +118,8 @@ Air Quality and Sustainability Particulate matter is a complex mixture of very s
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/walking-driving-and-cycling/</guid>
-      <description>None</description>
+      <description>People get around New York City in many ways - public transit, walking, cycling, driving, and other modes too. When these individual behaviors are added up, they shape our city and our health.
+Our built environment influences these behaviors. The design of our streets and presence of infrastructure like bicycle lanes, well maintained sidewalks, safe street crossings, dedicated bus lanes and convenient access to the subway have the potential to increase both the usage and safety of these forms of transportation.</description>
     </item>
     
     <item>

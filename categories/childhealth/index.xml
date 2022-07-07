@@ -34,7 +34,8 @@ Asthma is a leading cause of emergency room visits, hospitalizations and missed 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/birth-defects/</guid>
-      <description>Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life. Some birth defects (such as cleft lip or clubfoot) are easy to see, but others (such as heart defects or hearing loss) are found using special tests (such as x-rays, CT scans, or hearing tests).</description>
+      <description>Note: We are no longer updating birth defects data on the EH Data Portal. For more recent data, visit the New York State Environmental Public Health Tracker.
+ Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life.</description>
     </item>
     
     <item>
@@ -67,33 +68,12 @@ Cancer occurs at all ages, but the risk increases with age. One of every two men
     </item>
     
     <item>
-      <title>Carbon Monoxide Incidents</title>
+      <title>Carbon monoxide</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-incidents/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-incidents/</guid>
-      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal.
-This site contains data on unintentional carbon monoxide incidents and emergency responses by the New York City Fire Department (FDNY), reports to the NYC Poison Control Center (PCC) of actual or potential carbon monoxide exposure and hospitalizations of NYC residents who have been poisoned by carbon monoxide.</description>
-    </item>
-    
-    <item>
-      <title>Carbon Monoxide Poisoning</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</guid>
-      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal.
-This site contains data on unintentional carbon monoxide incidents and emergency responses by the New York City Fire Department (FDNY), reports to the NYC Poison Control Center (PCC) of actual or potential carbon monoxide exposure and hospitalizations of NYC residents who have been poisoned by carbon monoxide.</description>
-    </item>
-    
-    <item>
-      <title>Childhood Lead Exposure</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</guid>
-      <description>Childhood lead poisoning is a serious but preventable public health problem. Lead is a toxic metal that can cause learning and behavior problems, and delay physical growth and mental development. Testing for lead poisoning is a key component of childhood lead poisoning prevention, since most children with elevated blood lead levels exhibit no symptoms.
-This site provides data on blood lead testing and on elevated blood lead levels among NYC children.</description>
+      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal. Carbon monoxide blocks oxygen transport in the body. Symptoms of mild carbon monoxide poisoning include headache, nausea, fatigue, dizziness and disorientation. Breathing high concentrations of carbon monoxide can cause somebody to lose consciousness and have permanent neurological injury - or even death.</description>
     </item>
     
     <item>
@@ -102,17 +82,18 @@ This site provides data on blood lead testing and on elevated blood lead levels 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/cigarette-smoke/</guid>
-      <description>Cigarette smoke contains over 250 toxic chemicals, more than 50 of which cause cancer. Secondhand smoke is a dangerous combination of the smoke from the burning of a cigarette, pipe, or cigar, and the smoke exhaled by a smoker. There is no safe level of secondhand smoke exposure. Even brief exposure can be harmful.
-This site provides data on: teen and adult smoking, adults&amp;rsquo; exposure to cigarette smoke at home or at work and adults with a policy banning smoking in their home.</description>
+      <description>Smoking causes over a dozen cancers, heart disease, stroke, type 2 diabetes and many other diseases; it remains a leading cause of death in New York City (NYC). On average, people who do not smoke live about 10 years longer than people who do.
+Additionally, there is no safe level of exposure to secondhand smoke. Secondhand smoke causes cancer, heart disease and other illnesses in adults. Children exposed to smoke are more likely to have bronchitis, asthma attacks, ear infections, pneumonia and sudden infant death syndrome (SIDS).</description>
     </item>
     
     <item>
-      <title>Lead Hazards</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</link>
+      <title>Lead poisoning</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</guid>
-      <description>The main source of childhood lead poisoning in NYC, as in most of the United States, is lead-based paint in older, deteriorated housing. Nationwide, lead poisoning is associated with housing constructed before 1950, when lead-based paint was widely used and contained more lead than in later decades. In 1960, NYC banned the use of lead-based paint in homes and a national ban went into effect in 1978. Older layers of lead paint may still be present in older buildings and can become a lead hazard when the paint chips, peels or is abraded, or when renovations or repairs are conducted without taking appropriate actions to control dust.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</guid>
+      <description>Lead is a metal that is toxic to people. There is no safe level of lead in your body. It can cause learning and behavior problems, and delay physical growth and mental development.
+In the past, it was used in gasoline, paint, ceramics, caulking, pipes and solder. In 1960, NYC banned the use of lead-based paint in homes. A national ban came into effect in 1978. Leaded gasoline was phased out beginning in the 1970&amp;rsquo;s.</description>
     </item>
     
     <item>

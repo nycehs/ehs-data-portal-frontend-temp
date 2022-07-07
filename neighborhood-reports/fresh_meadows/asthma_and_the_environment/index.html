@@ -5498,6 +5498,223 @@
                 
                     
                     
+                    <button data-toggle="modal" data-target="#modal-Adul672-8" class="indicator-anchor">
+    <div class="row align-items-center">
+        <div class="col-6 col-md-5">
+            <span class="indicator-short-name">Health insurance (adults)</span>
+        </div>
+        <div class="col-6 col-md-4 topic-list">
+            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/Adul672_406.svg" alt="Visualization showing neighborhood rank of 4 out of 42." width="100%" class="viz d-md-none mb-1">
+            <span class="better">Better</span>
+            
+        </div>
+        <div class="d-none d-md-inline col-md-3">
+            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/Adul672_406.svg" alt="Visualization showing neighborhood rank of 4 out of 42." class="viz">
+        </div>
+    </div>
+</button>
+
+
+<div class="modal fade report-modal" id="modal-Adul672-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-left">
+                <h2 class="modal-title fs-xl" id="exampleModalLabel">Health insurance (adults)</h2>
+                <button type="button" class="close no-btn-style" data-dismiss="modal" aria-label="Close">
+                    <span class="fas fa-times-circle"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="fs-xl">Adults with health insurance, 2020</h2>
+                <p>In <strong>Fresh Meadows</strong>, the adults with health insurance, 2020 is <span class="better">Better</span> compared to the NYC average.</p>
+                <p>Health insurance coverage is associated with numerous beneficial health effects. Those with health insurance are more likely to have a regular doctor, receive preventive care services, better manage chronic health conditions, have longer life expectancy, and more.</p>
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h3>Neighborhood Comparison</h3>
+                <div class="row comparison">
+                    <div class="col-sm-4 text-primary">Fresh Meadows <span class="indicator-value">90.7</span></div>
+                    <div class="col-sm-4">Queens <span class="indicator-value">83.5</span></div>
+                    <div class="col-sm-4">New York City <span class="indicator-value">87.2</span></div>
+                </div>
+                <p><em>Percent </em></p>
+                
+                
+                
+                <div class="data-note"></div>
+                
+                
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h3>Adults with health insurance, 2020</h3>
+                <p>  <em>Percent </em></p>
+                <div style="width:100%; height:30vmin; z-index:10000;" id="summary-Adul672-8"></div> 
+                
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                
+                <h3>Trends Over Time</h3>
+                <p><em>Percent </em></p>
+                <div style="width:100%; height:50vmin; z-index:10000;" id="trend-Adul672-8"></div> 
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                
+                <h3>By Neighborhood</h3>
+                <p><em>Percent </em></p>
+                <div style="width:100%; height:60vmin; z-index:10000;" id="map-Adul672-8"></div>
+                
+            </div>
+            
+            <div class="modal-footer flex-column">
+                
+                <button type="button" class="btn btn-primary px-6" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    
+    $( "#modal-Adul672-8" ).on('shown.bs.modal', function() {
+        
+        var opt = {"renderer": "svg"};
+
+        
+        
+        aq.loadCSV(
+
+            
+            
+            "https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/data/" + report_name + "_data.csv"
+        
+        ).then(data => {
+            
+            arqTable = data;
+            
+
+            
+
+            
+            
+            var summaryData = 
+                arqTable
+                .filter(d => d.data_field_name == "Adul672")
+                .select("geo_join_id", "neighborhood", "data_value", "message", "end_date")
+                .dedupe()
+                .groupby("neighborhood")
+                .orderby("neighborhood", aq.desc("end_date"))
+                .slice(0,1) 
+                .ungroup()
+                .orderby("data_value") 
+                .select(aq.not("end_date"))
+                .objects()
+                
+            console.log("summaryData", summaryData);
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/summarySpec.json").then(data => {
+                
+                summarySpec = data;
+
+                
+
+                summarySpec.encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#summary-Adul672-8", 
+                    summarySpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("summaryData", summaryData).run()
+
+                }).catch(console.error);;
+                
+            });
+            
+
+            
+
+            
+
+            var mapData = summaryData;
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/mapSpec.json").then(data => {
+                
+                mapSpec = data;
+                
+                
+
+                mapSpec.layer[1].encoding.stroke.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#map-Adul672-8", 
+                    mapSpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("mapData", mapData).run()
+                    
+                }).catch(console.error);;
+                
+            });
+
+            
+            
+
+            
+            
+            var trendData = 
+                arqTable
+                .filter(d => d.data_field_name == "Adul672")
+                .select("start_date", "time", "geo_join_id", "neighborhood", "data_value", "message")
+                .dedupe()
+                .objects()
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/trendSpec.json").then(data => {
+                
+                
+                
+                trendSpec = data;
+                
+                
+
+                trendSpec.layer[1].encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#trend-Adul672-8", 
+                    trendSpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("trendData", trendData).run()
+                    
+                }).catch(console.error);;
+                
+            });
+            
+        });
+            
+    });
+        
+    </script>
+    
+                    
                     <button data-toggle="modal" data-target="#modal-poveACSP-8" class="indicator-anchor">
     <div class="row align-items-center">
         <div class="col-6 col-md-5">
@@ -5698,223 +5915,6 @@
                 
                 vegaEmbed(
                     "#trend-poveACSP-8", 
-                    trendSpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("trendData", trendData).run()
-                    
-                }).catch(console.error);;
-                
-            });
-            
-        });
-            
-    });
-        
-    </script>
-    
-                    
-                    <button data-toggle="modal" data-target="#modal-Adul672-8" class="indicator-anchor">
-    <div class="row align-items-center">
-        <div class="col-6 col-md-5">
-            <span class="indicator-short-name">Health insurance (adults)</span>
-        </div>
-        <div class="col-6 col-md-4 topic-list">
-            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/Adul672_406.svg" alt="Visualization showing neighborhood rank of 4 out of 42." width="100%" class="viz d-md-none mb-1">
-            <span class="middle">Middle</span>
-            
-        </div>
-        <div class="d-none d-md-inline col-md-3">
-            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/Adul672_406.svg" alt="Visualization showing neighborhood rank of 4 out of 42." class="viz">
-        </div>
-    </div>
-</button>
-
-
-<div class="modal fade report-modal" id="modal-Adul672-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header text-left">
-                <h2 class="modal-title fs-xl" id="exampleModalLabel">Health insurance (adults)</h2>
-                <button type="button" class="close no-btn-style" data-dismiss="modal" aria-label="Close">
-                    <span class="fas fa-times-circle"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h2 class="fs-xl">Adults with health insurance, 2020</h2>
-                <p>In <strong>Fresh Meadows</strong>, the adults with health insurance, 2020 is <span class="middle">Middle</span> compared to the NYC average.</p>
-                <p>Health insurance coverage is associated with numerous beneficial health effects. Those with health insurance are more likely to have a regular doctor, receive preventive care services, better manage chronic health conditions, have longer life expectancy, and more.</p>
-            </div>
-            <hr>
-            <div class="modal-body">
-                <h3>Neighborhood Comparison</h3>
-                <div class="row comparison">
-                    <div class="col-sm-4 text-primary">Fresh Meadows <span class="indicator-value">90.7</span></div>
-                    <div class="col-sm-4">Queens <span class="indicator-value">83.5</span></div>
-                    <div class="col-sm-4">New York City <span class="indicator-value">87.2</span></div>
-                </div>
-                <p><em>Percent </em></p>
-                
-                
-                
-                <div class="data-note"></div>
-                
-                
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                <h3>Adults with health insurance, 2020</h3>
-                <p>  <em>Percent </em></p>
-                <div style="width:100%; height:30vmin; z-index:10000;" id="summary-Adul672-8"></div> 
-                
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                
-                <h3>Trends Over Time</h3>
-                <p><em>Percent </em></p>
-                <div style="width:100%; height:50vmin; z-index:10000;" id="trend-Adul672-8"></div> 
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                
-                <h3>By Neighborhood</h3>
-                <p><em>Percent </em></p>
-                <div style="width:100%; height:60vmin; z-index:10000;" id="map-Adul672-8"></div>
-                
-            </div>
-            
-            <div class="modal-footer flex-column">
-                
-                <button type="button" class="btn btn-primary px-6" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<script type="text/javascript">
-    
-    $( "#modal-Adul672-8" ).on('shown.bs.modal', function() {
-        
-        var opt = {"renderer": "svg"};
-
-        
-        
-        aq.loadCSV(
-
-            
-            
-            "https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/data/" + report_name + "_data.csv"
-        
-        ).then(data => {
-            
-            arqTable = data;
-            
-
-            
-
-            
-            
-            var summaryData = 
-                arqTable
-                .filter(d => d.data_field_name == "Adul672")
-                .select("geo_join_id", "neighborhood", "data_value", "message", "end_date")
-                .dedupe()
-                .groupby("neighborhood")
-                .orderby("neighborhood", aq.desc("end_date"))
-                .slice(0,1) 
-                .ungroup()
-                .orderby("data_value") 
-                .select(aq.not("end_date"))
-                .objects()
-                
-            console.log("summaryData", summaryData);
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/summarySpec.json").then(data => {
-                
-                summarySpec = data;
-
-                
-
-                summarySpec.encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#summary-Adul672-8", 
-                    summarySpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("summaryData", summaryData).run()
-
-                }).catch(console.error);;
-                
-            });
-            
-
-            
-
-            
-
-            var mapData = summaryData;
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/mapSpec.json").then(data => {
-                
-                mapSpec = data;
-                
-                
-
-                mapSpec.layer[1].encoding.stroke.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#map-Adul672-8", 
-                    mapSpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("mapData", mapData).run()
-                    
-                }).catch(console.error);;
-                
-            });
-
-            
-            
-
-            
-            
-            var trendData = 
-                arqTable
-                .filter(d => d.data_field_name == "Adul672")
-                .select("start_date", "time", "geo_join_id", "neighborhood", "data_value", "message")
-                .dedupe()
-                .objects()
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/trendSpec.json").then(data => {
-                
-                
-                
-                trendSpec = data;
-                
-                
-
-                trendSpec.layer[1].encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#trend-Adul672-8", 
                     trendSpec, 
                     opt
                 ).then((res) => {

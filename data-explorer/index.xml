@@ -13,9 +13,10 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/active-design/</guid>
-      <description>Physical inactivity and unhealthy diet rank among the leading risk factors for premature death in the United States. Active design promotes health by using architectural and urban design strategies to encourage stair climbing, walking, bicycling, transit use, active recreation and healthy eating.
-What we can do:
- Increase access to public parks and recreation. Create pedestrian plazas. Ensure well-maintained sidewalks. Plant street trees. Provide secure bicycle storage. Make stairways in buildings attractive and accessible.</description>
+      <description>Physical activity and healthy eating rank among the leading ways to get and stay healthy.
+Active design is an applied, evidence-informed approach to improve physical, mental and social health outcomes through the design of the built environment.
+To improve health, we can:
+ Increase access to public parks and recreation Create pedestrian plazas, and maintain sidewalks Plant street trees Provide safer cycling infrastructure and secure bicycle storage Make stairways attractive and accessible  Strategies like these can have a measurable effect on people’s ability to safely maintain their physical, mental, and social health.</description>
     </item>
     
     <item>
@@ -30,25 +31,14 @@ Although New York City&amp;rsquo;s air does not currently meet federal air quali
     </item>
     
     <item>
-      <title>Alcohol Access</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-access/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-access/</guid>
-      <description>Heavy regular drinking and binge drinking contribute to a wide range of chronic health problems, including heart disease, diabetes, cancer, stroke, cirrhosis, depression and dementia. Alcohol use is also associated with suicide, homicide, domestic violence, sexually transmitted diseases and injuries. It is one of the leading behavior-related causes of death in New York City (NYC).
-This site provides data on heavy alcohol consumption and alcohol outlets in NYC.
-Alcohol and the Environment Greater alcohol outlet density has been associated with a variety of health and social consequences, including:</description>
-    </item>
-    
-    <item>
-      <title>Alcohol Use</title>
+      <title>Alcohol Access and Use</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-use/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-use/</guid>
       <description>Heavy regular drinking and binge drinking contribute to a wide range of chronic health problems, including heart disease, diabetes, cancer, stroke, cirrhosis, depression and dementia. Alcohol use is also associated with suicide, homicide, domestic violence, sexually transmitted diseases and injuries. It is one of the leading behavior-related causes of death in New York City (NYC).
 This site provides data on heavy alcohol consumption and alcohol outlets in NYC.
-Alcohol and the EnvironmentGreater alcohol outlet density has been associated with a variety of health and social consequences, including:  Alcohol-related hospitalizations Violent crime, assault and homicide Child abuse and intimate partner violence Liver cirrhosis mortality Motor vehicle accidents  Alcohol advertising – at point-of-sale and other locations – permeates the NYC environment.</description>
+Alcohol and the Environment Greater alcohol outlet density has been associated with a variety of health and social consequences, including:</description>
     </item>
     
     <item>
@@ -71,6 +61,16 @@ Asthma is a leading cause of emergency room visits, hospitalizations and missed 
     </item>
     
     <item>
+      <title>Asthma triggers at home</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</guid>
+      <description>Housing conditions can trigger asthma. In New York City, childhood asthma is a significant health threat that affects thousands of children per year.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.</description>
+    </item>
+    
+    <item>
       <title>Bed Bugs</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/bed-bugs/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -85,7 +85,8 @@ Asthma is a leading cause of emergency room visits, hospitalizations and missed 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/birth-defects/</guid>
-      <description>Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life. Some birth defects (such as cleft lip or clubfoot) are easy to see, but others (such as heart defects or hearing loss) are found using special tests (such as x-rays, CT scans, or hearing tests).</description>
+      <description>Note: We are no longer updating birth defects data on the EH Data Portal. For more recent data, visit the New York State Environmental Public Health Tracker.
+ Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life.</description>
     </item>
     
     <item>
@@ -118,33 +119,12 @@ Cancer occurs at all ages, but the risk increases with age. One of every two men
     </item>
     
     <item>
-      <title>Carbon Monoxide Incidents</title>
+      <title>Carbon monoxide</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-incidents/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-incidents/</guid>
-      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal.
-This site contains data on unintentional carbon monoxide incidents and emergency responses by the New York City Fire Department (FDNY), reports to the NYC Poison Control Center (PCC) of actual or potential carbon monoxide exposure and hospitalizations of NYC residents who have been poisoned by carbon monoxide.</description>
-    </item>
-    
-    <item>
-      <title>Carbon Monoxide Poisoning</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</guid>
-      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal.
-This site contains data on unintentional carbon monoxide incidents and emergency responses by the New York City Fire Department (FDNY), reports to the NYC Poison Control Center (PCC) of actual or potential carbon monoxide exposure and hospitalizations of NYC residents who have been poisoned by carbon monoxide.</description>
-    </item>
-    
-    <item>
-      <title>Childhood Lead Exposure</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/childhood-lead-exposure/</guid>
-      <description>Childhood lead poisoning is a serious but preventable public health problem. Lead is a toxic metal that can cause learning and behavior problems, and delay physical growth and mental development. Testing for lead poisoning is a key component of childhood lead poisoning prevention, since most children with elevated blood lead levels exhibit no symptoms.
-This site provides data on blood lead testing and on elevated blood lead levels among NYC children.</description>
+      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal. Carbon monoxide blocks oxygen transport in the body. Symptoms of mild carbon monoxide poisoning include headache, nausea, fatigue, dizziness and disorientation. Breathing high concentrations of carbon monoxide can cause somebody to lose consciousness and have permanent neurological injury - or even death.</description>
     </item>
     
     <item>
@@ -153,7 +133,9 @@ This site provides data on blood lead testing and on elevated blood lead levels 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</guid>
-      <description>More information coming soon.</description>
+      <description>Chronic obstructive pulmonary disease, or COPD, is a group of diseases that include emphysemia and chronic bronchitis.
+These diseases can cause severe breathing problems. Over 16 million Americans have COPD, and it is the third-leading cause of death in the USA.
+Though there is no cure for COPD, it can be treated and managed. One important way to manage COPD is to reduce environmental exposure to things that can exacerbate COPD, like tobacco smoke, indoor air pollution, and outdoor air pollution.</description>
     </item>
     
     <item>
@@ -162,8 +144,8 @@ This site provides data on blood lead testing and on elevated blood lead levels 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/cigarette-smoke/</guid>
-      <description>Cigarette smoke contains over 250 toxic chemicals, more than 50 of which cause cancer. Secondhand smoke is a dangerous combination of the smoke from the burning of a cigarette, pipe, or cigar, and the smoke exhaled by a smoker. There is no safe level of secondhand smoke exposure. Even brief exposure can be harmful.
-This site provides data on: teen and adult smoking, adults&amp;rsquo; exposure to cigarette smoke at home or at work and adults with a policy banning smoking in their home.</description>
+      <description>Smoking causes over a dozen cancers, heart disease, stroke, type 2 diabetes and many other diseases; it remains a leading cause of death in New York City (NYC). On average, people who do not smoke live about 10 years longer than people who do.
+Additionally, there is no safe level of exposure to secondhand smoke. Secondhand smoke causes cancer, heart disease and other illnesses in adults. Children exposed to smoke are more likely to have bronchitis, asthma attacks, ear infections, pneumonia and sudden infant death syndrome (SIDS).</description>
     </item>
     
     <item>
@@ -174,17 +156,6 @@ This site provides data on: teen and adult smoking, adults&amp;rsquo; exposure t
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/climate/</guid>
       <description>A region&amp;rsquo;s climate is characterized by its usual weather conditions, seasons, and patterns in extreme weather events like heat waves, droughts, and hurricanes.
 The world’s climate is shifting, becoming warmer with more precipitation and weather extremes. Over the past century in New York City, average temperatures have increased by 0.25°F per decade, precipitation by 0.72 inches per decade, and sea levels by 1.2 inches per decade. By the 2020s, a projected 25-30 days above 90°F are expected in a typical summer, resulting in more frequent and intense heat waves.</description>
-    </item>
-    
-    <item>
-      <title>Climate Change</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/climate-change/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/climate-change/</guid>
-      <description>There is broad consensus within the scientific community that human activity is changing the Earth&amp;rsquo;s climate through increasing concentrations of greenhouse gases (GHGs) — primarily carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and chlorofluorocarbons (CFCs) — in the atmosphere.
-Scientists have predicted that unless GHG emissions are substantially stemmed by the end of the century, climate change will become irreversible.
-A key part of combating climate change is mitigation, which means reducing GHG emissions.</description>
     </item>
     
     <item>
@@ -234,7 +205,9 @@ Falls and the environment Although falls can occur anywhere, falls among older a
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/health-care/</guid>
-      <description>More information coming soon. </description>
+      <description>Health care is a valuable tool to stay healthy.
+Health insurance coverage is associated with many health benefits. People with health insurance are more likely to have a regular doctor, receive preventive care services, better manage chronic health conditions, have longer life expectancy, and more.
+However, not all New Yorkers can access appropriate amounts of care. Many New Yorkers remain uninsured. People without access to appropriate health care don&amp;rsquo;t receive the care they need to stay healthy.</description>
     </item>
     
     <item>
@@ -256,25 +229,34 @@ Falls and the environment Although falls can occur anywhere, falls among older a
     </item>
     
     <item>
-      <title>Housing</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</link>
+      <title>Housing maintenance</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</guid>
-      <description>No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.
-In New York City, substandard or poor housing tends to cluster in neighborhoods. Homes that are deteriorating or dilapidated, or homes near buildings with broken or boarded-up windows, disproportionately tend to be in low-income neighborhoods, although the differences for these indicators have decreased.
-Housing and Health Housing quality impacts health directly and indirectly.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</guid>
+      <description>Buildings with maintenance issues and disrepair can harm health. Across NYC, low-income neighborhoods have a higher percentage of buildings in disrepair due to past and present disinvestment and housing discrimination. This housing disrepair harms residents&amp;rsquo; health.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury. All building owners are required by law to provide essential services such as heat and hot water, make timely repairs, and maintain a pest-free building.</description>
     </item>
     
     <item>
-      <title>Housing and Neighborhoods</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</link>
+      <title>Housing safety</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Create homes for nearly a million more New Yorkers while making housing and neighborhoods more affordable and sustainable.
-Housing Supply We are tracking the number of new housing units created since the start of the plan in 2007, as well as the size of the total housing stock, to ensure that the city is meeting the supply portion of its goal.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health - both in terms of safety characteristics within the home, and in terms of factors that affect housing stability.
+Safety characteristics A home&amp;rsquo;s safety characteristics might include:
+ Air conditioning, which is a vital tool to protect people who are at risk of heat-related illness and death Electric medical equipment.</description>
+    </item>
+    
+    <item>
+      <title>Housing stability</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health.
+Housing stability In NYC, about one out of every three homes is owned by the person living there - about half the national average. Owning a home is a powerful way to build intergenerational wealth, but historical and contemporary disinvestment and housing discrimination has made it hard for many New Yorkers to own homes.</description>
     </item>
     
     <item>
@@ -290,12 +272,13 @@ Air Quality and Sustainability Particulate matter is a complex mixture of very s
     </item>
     
     <item>
-      <title>Lead Hazards</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</link>
+      <title>Lead poisoning</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</guid>
-      <description>The main source of childhood lead poisoning in NYC, as in most of the United States, is lead-based paint in older, deteriorated housing. Nationwide, lead poisoning is associated with housing constructed before 1950, when lead-based paint was widely used and contained more lead than in later decades. In 1960, NYC banned the use of lead-based paint in homes and a national ban went into effect in 1978. Older layers of lead paint may still be present in older buildings and can become a lead hazard when the paint chips, peels or is abraded, or when renovations or repairs are conducted without taking appropriate actions to control dust.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</guid>
+      <description>Lead is a metal that is toxic to people. There is no safe level of lead in your body. It can cause learning and behavior problems, and delay physical growth and mental development.
+In the past, it was used in gasoline, paint, ceramics, caulking, pipes and solder. In 1960, NYC banned the use of lead-based paint in homes. A national ban came into effect in 1978. Leaded gasoline was phased out beginning in the 1970&amp;rsquo;s.</description>
     </item>
     
     <item>
@@ -315,7 +298,9 @@ This site provides survey data on the prevalence of mice or rats inside and outs
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/mortality/</guid>
-      <description>Coming soon.</description>
+      <description>Death is, of course, a severe health outcome. Many deaths are preventable.
+Premature mortality lets us look at deaths before age 65. It can be a useful way to indicate the overall health of the population.
+Neonatal deaths, postneonatal deaths, and infant deaths let us look at deaths among the the youngest members of our communities. Infants, with new, developing bodies, can be very susceptible to environmental threats - like poisonings, accidents, and injuries.</description>
     </item>
     
     <item>
@@ -336,17 +321,6 @@ Noise and the Environment Exposure to any noise has long been recognized as an i
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/overweight/</guid>
       <description>People who are overweight or obese are at increased risk for heart disease and diabetes. Physical activity and healthy eating can promote well-being and relieve stress.
 Weight and the Environment Neighborhood conditions and resources can encourage or discourage healthy behaviors. The density and types of food retail outlets available in neighborhoods may affect food shopping habits and nutrition choices of residents. Healthy food choices combined with physically active lifestyle support maintenance of an optimal bodyweight and overall good health.</description>
-    </item>
-    
-    <item>
-      <title>Parks and Public Space</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/parks-and-public-space/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/parks-and-public-space/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Ensure that all New Yorkers live within a ten minute walk of a park.
-Park Distance To be sure that nearly everyone is within a ten minute walk, we are tracking the numbers of New Yorkers who live within both a ½ and a ¼ mile of a park. These distances were chosen because people walk at different speeds.</description>
     </item>
     
     <item>
@@ -412,27 +386,6 @@ We are working to increase the amount diverted to recycling, composting, and con
     </item>
     
     <item>
-      <title>Traffic</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/traffic/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/traffic/</guid>
-      <description>Coming soon</description>
-    </item>
-    
-    <item>
-      <title>Transportation</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/transportation/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/transportation/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Expand sustainable transportation choices and ensure the reliability and quality of our transportation network.
-To measure progress towards this goal, we are tracking the switch to more sustainable modes of transportation (modal shift) and mass transit capacity, as well as whether our transportation system is meeting a state of good repair.
-Modal Shift We are tracking the extent to which people are using non-automobile modes of transit including public transportation (e.</description>
-    </item>
-    
-    <item>
       <title>Transportation-related Injuries</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/transportation-related-injuries/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -468,29 +421,8 @@ Violence is a public health issue because it is a cause of morbidity and mortali
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/walking-driving-and-cycling/</guid>
-      <description>None</description>
-    </item>
-    
-    <item>
-      <title>Water Supply</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/water-supply/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/water-supply/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Ensure the high quality and reliability of our water supply system.
-Drinking Water Quality If the NYC water network is properly maintained and operated, then we expect it to deliver consistently clean and potable water throughout the city. To ensure that our water supply is potable, the Department of Environmental Protection (DEP) collects approximately 15,000 drinking water samples and performs approximately 200,000 analyses of water quality annually.</description>
-    </item>
-    
-    <item>
-      <title>Waterways</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/waterways/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/waterways/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Improve the quality of our waterways to increase opportunities for recreation and to restore coastal ecosystems.
-New York State sets water quality standards, and NYC monitors New York Harbor water quality on an annual basis through the Harbor Survey. The survey uses 36 stations located throughout the open waters of the harbor and 19 stations located in smaller tributaries within the city.</description>
+      <description>People get around New York City in many ways - public transit, walking, cycling, driving, and other modes too. When these individual behaviors are added up, they shape our city and our health.
+Our built environment influences these behaviors. The design of our streets and presence of infrastructure like bicycle lanes, well maintained sidewalks, safe street crossings, dedicated bus lanes and convenient access to the subway have the potential to increase both the usage and safety of these forms of transportation.</description>
     </item>
     
     <item>

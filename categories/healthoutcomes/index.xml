@@ -19,12 +19,14 @@ But the power is out. Without the nebulizer, your child’s breathing gets worse
     </item>
     
     <item>
-      <title>Health outcomes</title>
+      <title>Environmental health outcomes</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/healthoutcomes/</link>
       <pubDate>Wed, 04 Aug 2021 12:32:15 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/healthoutcomes/</guid>
-      <description>Our environment - the world around us - affects our health. Here are datasets on the effects that our environment has on our health - the health outcomes we experience.</description>
+      <description>Our environment - the world around us - affects our health. Here are datasets on health outcomes that people experience that may be linked to the environment.
+Some of these have clear links to the environment, like lead poisoning. Others have some uncertain links, and are still being investigated and understood.
+But while specific health outcomes may have stronger or weaker links to the environment, the environment&amp;rsquo;s overall effect on our health is clear - we know that one of the strongest predictors of health is where you&amp;rsquo;re born.</description>
     </item>
     
     <item>
@@ -43,7 +45,8 @@ Asthma is a leading cause of emergency room visits, hospitalizations and missed 
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/birth-defects/</guid>
-      <description>Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life. Some birth defects (such as cleft lip or clubfoot) are easy to see, but others (such as heart defects or hearing loss) are found using special tests (such as x-rays, CT scans, or hearing tests).</description>
+      <description>Note: We are no longer updating birth defects data on the EH Data Portal. For more recent data, visit the New York State Environmental Public Health Tracker.
+ Birth defects (also called congenital malformations) are conditions that happen when a baby does not develop normally during pregnancy. Structural defects may include missing limbs, malformed hearts, spina bifida and genetic conditions like Down syndrome. Most birth defects happen during the first three months of pregnancy and are detected within the first year of life.</description>
     </item>
     
     <item>
@@ -76,22 +79,14 @@ Cancer occurs at all ages, but the risk increases with age. One of every two men
     </item>
     
     <item>
-      <title>Carbon Monoxide Poisoning</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/carbon-monoxide-poisoning/</guid>
-      <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal.
-This site contains data on unintentional carbon monoxide incidents and emergency responses by the New York City Fire Department (FDNY), reports to the NYC Poison Control Center (PCC) of actual or potential carbon monoxide exposure and hospitalizations of NYC residents who have been poisoned by carbon monoxide.</description>
-    </item>
-    
-    <item>
       <title>Chronic Obstructive Pulmonary Disease</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</guid>
-      <description>More information coming soon.</description>
+      <description>Chronic obstructive pulmonary disease, or COPD, is a group of diseases that include emphysemia and chronic bronchitis.
+These diseases can cause severe breathing problems. Over 16 million Americans have COPD, and it is the third-leading cause of death in the USA.
+Though there is no cure for COPD, it can be treated and managed. One important way to manage COPD is to reduce environmental exposure to things that can exacerbate COPD, like tobacco smoke, indoor air pollution, and outdoor air pollution.</description>
     </item>
     
     <item>
@@ -128,7 +123,9 @@ Falls and the environment Although falls can occur anywhere, falls among older a
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/mortality/</guid>
-      <description>Coming soon.</description>
+      <description>Death is, of course, a severe health outcome. Many deaths are preventable.
+Premature mortality lets us look at deaths before age 65. It can be a useful way to indicate the overall health of the population.
+Neonatal deaths, postneonatal deaths, and infant deaths let us look at deaths among the the youngest members of our communities. Infants, with new, developing bodies, can be very susceptible to environmental threats - like poisonings, accidents, and injuries.</description>
     </item>
     
     <item>

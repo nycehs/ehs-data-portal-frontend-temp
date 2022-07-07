@@ -8,13 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Sep 2021 07:58:01 -0400</lastBuildDate><atom:link href="https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Transportation and Active Design</title>
+      <title>Active Design, Public Space, and Transportation</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/transportation/</link>
       <pubDate>Thu, 30 Sep 2021 07:58:01 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/transportation/</guid>
-      <description>Physical inactivity and unhealthy diet rank among the leading risk factors for premature death in the United States. Active design, however, promotes health by using architectural and urban design strategies to encourage walking, bicycling, stair climbing, transit use, active recreation, and healthy eating.
-Designing to increase access to parks, create pedestrian plazas, ensure well-maintained sidewalks, plant street trees, provide secure bicycle storage, and make stairwaus in buildings attractive and accessible can have a measurable effect on people&amp;rsquo;s ability to safetly get regular physical activity that can keep them healthy.</description>
+      <description>Physical activity and healthy eating rank among the leading ways to get and stay healthy.
+Active design is an applied, evidence-informed approach to improve physical, mental and social health outcomes through the design of the built environment. Active design leverages the expertise of architects, planners, developers, community members, designers, and other stakeholders.
+Designing to increase access to high quality parks, pedestrian plazas, sidewalks, quiet spaces, trees and other greenery, secure bicycle storage, gathering spaces, and stairways can have a measurable effect on people’s ability to safely maintain their physical, mental, and social health.</description>
     </item>
     
     <item>
@@ -23,9 +24,10 @@ Designing to increase access to parks, create pedestrian plazas, ensure well-mai
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/active-design/</guid>
-      <description>Physical inactivity and unhealthy diet rank among the leading risk factors for premature death in the United States. Active design promotes health by using architectural and urban design strategies to encourage stair climbing, walking, bicycling, transit use, active recreation and healthy eating.
-What we can do:
- Increase access to public parks and recreation. Create pedestrian plazas. Ensure well-maintained sidewalks. Plant street trees. Provide secure bicycle storage. Make stairways in buildings attractive and accessible.</description>
+      <description>Physical activity and healthy eating rank among the leading ways to get and stay healthy.
+Active design is an applied, evidence-informed approach to improve physical, mental and social health outcomes through the design of the built environment.
+To improve health, we can:
+ Increase access to public parks and recreation Create pedestrian plazas, and maintain sidewalks Plant street trees Provide safer cycling infrastructure and secure bicycle storage Make stairways attractive and accessible  Strategies like these can have a measurable effect on people’s ability to safely maintain their physical, mental, and social health.</description>
     </item>
     
     <item>
@@ -34,7 +36,8 @@ What we can do:
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/walking-driving-and-cycling/</guid>
-      <description>None</description>
+      <description>People get around New York City in many ways - public transit, walking, cycling, driving, and other modes too. When these individual behaviors are added up, they shape our city and our health.
+Our built environment influences these behaviors. The design of our streets and presence of infrastructure like bicycle lanes, well maintained sidewalks, safe street crossings, dedicated bus lanes and convenient access to the subway have the potential to increase both the usage and safety of these forms of transportation.</description>
     </item>
     
   </channel>

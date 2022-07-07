@@ -6,16 +6,7 @@
     <description>Recent content in neighborhoods on Environment &amp; Health Data Portal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Sep 2021 10:59:52 -0400</lastBuildDate><atom:link href="https://nycehs.github.io/ehs-data-portal-frontend-temp/categories/neighborhoods/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Neighborhoods</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/neighborhoods/</link>
-      <pubDate>Wed, 08 Sep 2021 10:59:52 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/neighborhoods/</guid>
-      <description>Our neighborhoods are the world around us. The built environment and the social environment where we spend most of our time affect health.</description>
-    </item>
-    
+    <lastBuildDate>Fri, 20 Aug 2021 12:52:43 -0400</lastBuildDate><atom:link href="https://nycehs.github.io/ehs-data-portal-frontend-temp/categories/neighborhoods/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Urban Heat Island Effect in New York City</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-stories/localtemp/</link>
@@ -32,9 +23,10 @@ At 6.00 PM on June 30, 2018, the air temperature at the LaGuardia Airport Weathe
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/active-design/</guid>
-      <description>Physical inactivity and unhealthy diet rank among the leading risk factors for premature death in the United States. Active design promotes health by using architectural and urban design strategies to encourage stair climbing, walking, bicycling, transit use, active recreation and healthy eating.
-What we can do:
- Increase access to public parks and recreation. Create pedestrian plazas. Ensure well-maintained sidewalks. Plant street trees. Provide secure bicycle storage. Make stairways in buildings attractive and accessible.</description>
+      <description>Physical activity and healthy eating rank among the leading ways to get and stay healthy.
+Active design is an applied, evidence-informed approach to improve physical, mental and social health outcomes through the design of the built environment.
+To improve health, we can:
+ Increase access to public parks and recreation Create pedestrian plazas, and maintain sidewalks Plant street trees Provide safer cycling infrastructure and secure bicycle storage Make stairways attractive and accessible  Strategies like these can have a measurable effect on people’s ability to safely maintain their physical, mental, and social health.</description>
     </item>
     
     <item>
@@ -49,14 +41,13 @@ Although New York City&amp;rsquo;s air does not currently meet federal air quali
     </item>
     
     <item>
-      <title>Alcohol Access</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-access/</link>
+      <title>Asthma triggers at home</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/alcohol-access/</guid>
-      <description>Heavy regular drinking and binge drinking contribute to a wide range of chronic health problems, including heart disease, diabetes, cancer, stroke, cirrhosis, depression and dementia. Alcohol use is also associated with suicide, homicide, domestic violence, sexually transmitted diseases and injuries. It is one of the leading behavior-related causes of death in New York City (NYC).
-This site provides data on heavy alcohol consumption and alcohol outlets in NYC.
-Alcohol and the Environment Greater alcohol outlet density has been associated with a variety of health and social consequences, including:</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/asthma-triggers/</guid>
+      <description>Housing conditions can trigger asthma. In New York City, childhood asthma is a significant health threat that affects thousands of children per year.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.</description>
     </item>
     
     <item>
@@ -79,34 +70,44 @@ Cockroaches like warm, dark places such as toasters, clocks, microwave ovens, wa
     </item>
     
     <item>
-      <title>Housing</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</link>
+      <title>Housing maintenance</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing/</guid>
-      <description>No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury.
-In New York City, substandard or poor housing tends to cluster in neighborhoods. Homes that are deteriorating or dilapidated, or homes near buildings with broken or boarded-up windows, disproportionately tend to be in low-income neighborhoods, although the differences for these indicators have decreased.
-Housing and Health Housing quality impacts health directly and indirectly.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-maintenance/</guid>
+      <description>Buildings with maintenance issues and disrepair can harm health. Across NYC, low-income neighborhoods have a higher percentage of buildings in disrepair due to past and present disinvestment and housing discrimination. This housing disrepair harms residents&amp;rsquo; health.
+No family should have to choose between affordable and healthy housing. All tenants are entitled to safe, decent and sanitary housing, which prevents disease and injury. All building owners are required by law to provide essential services such as heat and hot water, make timely repairs, and maintain a pest-free building.</description>
     </item>
     
     <item>
-      <title>Housing and Neighborhoods</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</link>
+      <title>Housing safety</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-and-neighborhoods/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Create homes for nearly a million more New Yorkers while making housing and neighborhoods more affordable and sustainable.
-Housing Supply We are tracking the number of new housing units created since the start of the plan in 2007, as well as the size of the total housing stock, to ensure that the city is meeting the supply portion of its goal.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health - both in terms of safety characteristics within the home, and in terms of factors that affect housing stability.
+Safety characteristics A home&amp;rsquo;s safety characteristics might include:
+ Air conditioning, which is a vital tool to protect people who are at risk of heat-related illness and death Electric medical equipment.</description>
     </item>
     
     <item>
-      <title>Lead Hazards</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</link>
+      <title>Housing stability</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead-hazards/</guid>
-      <description>The main source of childhood lead poisoning in NYC, as in most of the United States, is lead-based paint in older, deteriorated housing. Nationwide, lead poisoning is associated with housing constructed before 1950, when lead-based paint was widely used and contained more lead than in later decades. In 1960, NYC banned the use of lead-based paint in homes and a national ban went into effect in 1978. Older layers of lead paint may still be present in older buildings and can become a lead hazard when the paint chips, peels or is abraded, or when renovations or repairs are conducted without taking appropriate actions to control dust.</description>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-stability/</guid>
+      <description>Most people spend most of their time in their home. That makes the home a crucial environment that can affect one&amp;rsquo;s health.
+Housing stability In NYC, about one out of every three homes is owned by the person living there - about half the national average. Owning a home is a powerful way to build intergenerational wealth, but historical and contemporary disinvestment and housing discrimination has made it hard for many New Yorkers to own homes.</description>
+    </item>
+    
+    <item>
+      <title>Lead poisoning</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/lead/</guid>
+      <description>Lead is a metal that is toxic to people. There is no safe level of lead in your body. It can cause learning and behavior problems, and delay physical growth and mental development.
+In the past, it was used in gasoline, paint, ceramics, caulking, pipes and solder. In 1960, NYC banned the use of lead-based paint in homes. A national ban came into effect in 1978. Leaded gasoline was phased out beginning in the 1970&amp;rsquo;s.</description>
     </item>
     
     <item>
@@ -117,49 +118,6 @@ Housing Supply We are tracking the number of new housing units created since the
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/noise/</guid>
       <description>Ambient noise is sound from an environmental source, such as traffic, construction, industrial or recreation activities, animals, or people’s voices, that is unwanted to the person who hears it.
 Noise and the Environment Exposure to any noise has long been recognized as an important occupational health hazard in workplaces and is increasingly viewed as a prevalent urban environmental hazard associated with adverse psychosocial and physiologic health effects such as sleep disturbance, higher blood pressure, cardiovascular disease, and impaired cognitive performance in children.</description>
-    </item>
-    
-    <item>
-      <title>Parks and Public Space</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/parks-and-public-space/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/parks-and-public-space/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Ensure that all New Yorkers live within a ten minute walk of a park.
-Park Distance To be sure that nearly everyone is within a ten minute walk, we are tracking the numbers of New Yorkers who live within both a ½ and a ¼ mile of a park. These distances were chosen because people walk at different speeds.</description>
-    </item>
-    
-    <item>
-      <title>Traffic</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/traffic/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/traffic/</guid>
-      <description>Coming soon</description>
-    </item>
-    
-    <item>
-      <title>Transportation</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/transportation/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/transportation/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Expand sustainable transportation choices and ensure the reliability and quality of our transportation network.
-To measure progress towards this goal, we are tracking the switch to more sustainable modes of transportation (modal shift) and mass transit capacity, as well as whether our transportation system is meeting a state of good repair.
-Modal Shift We are tracking the extent to which people are using non-automobile modes of transit including public transportation (e.</description>
-    </item>
-    
-    <item>
-      <title>Waterways</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/waterways/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/waterways/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Improve the quality of our waterways to increase opportunities for recreation and to restore coastal ecosystems.
-New York State sets water quality standards, and NYC monitors New York Harbor water quality on an annual basis through the Harbor Survey. The survey uses 36 stations located throughout the open waters of the harbor and 19 stations located in smaller tributaries within the city.</description>
     </item>
     
     <item>

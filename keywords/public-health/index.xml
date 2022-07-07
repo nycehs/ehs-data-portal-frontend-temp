@@ -18,22 +18,25 @@ In New York City, those most vulnerable to the dangers of hot weather are older 
     </item>
     
     <item>
-      <title>Social and Economic Conditions</title>
+      <title>Inequality and health inequities</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/social/</link>
       <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/social/</guid>
-      <description>Social and economic conditions affect people’s health. These conditions (also called “social determinants of health”) are conditions that people may be born into or fall into over the course of their lives. They are shaped by local, national and global distribution of resources and power.
-People tend to be healthier when they have access to economic and financial stability, higher education, adequate health care, healthy neighborhoods, and safe, strong communities.</description>
+      <description>Inequality is a significant driver of bad health: a society that deprives people of resources to stay healthy is a society where many people become sick, injured, or die because of factors outside of their control.
+People tend to be healthier when they have access to economic and financial stability, higher education, adequate health care, healthy neighborhoods, and safe, strong communities.
+Health inequities are systematic differences in health outcomes that result from differences in access to the conditions that keep people healthy.</description>
     </item>
     
     <item>
-      <title>Health outcomes</title>
+      <title>Environmental health outcomes</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/healthoutcomes/</link>
       <pubDate>Wed, 04 Aug 2021 12:32:15 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/key-topics/healthoutcomes/</guid>
-      <description>Our environment - the world around us - affects our health. Here are datasets on the effects that our environment has on our health - the health outcomes we experience.</description>
+      <description>Our environment - the world around us - affects our health. Here are datasets on health outcomes that people experience that may be linked to the environment.
+Some of these have clear links to the environment, like lead poisoning. Others have some uncertain links, and are still being investigated and understood.
+But while specific health outcomes may have stronger or weaker links to the environment, the environment&amp;rsquo;s overall effect on our health is clear - we know that one of the strongest predictors of health is where you&amp;rsquo;re born.</description>
     </item>
     
     <item>

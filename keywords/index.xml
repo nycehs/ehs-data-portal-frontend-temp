@@ -449,6 +449,33 @@
     </item>
     
     <item>
+      <title>health equity</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/health-equity/</link>
+      <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/health-equity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inequality</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/inequality/</link>
+      <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/inequality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>justice</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/justice/</link>
+      <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/justice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>oppression</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/oppression/</link>
       <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
@@ -472,6 +499,15 @@
       <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/social-determinants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>social determinants of health</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/social-determinants-of-health/</link>
+      <pubDate>Fri, 01 Oct 2021 07:59:16 -0400</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/social-determinants-of-health/</guid>
       <description></description>
     </item>
     
@@ -544,60 +580,6 @@
       <pubDate>Thu, 30 Sep 2021 07:58:01 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/walking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>monitoring</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/monitoring/</link>
-      <pubDate>Wed, 08 Sep 2021 11:14:56 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/monitoring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pollutants</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/pollutants/</link>
-      <pubDate>Wed, 08 Sep 2021 11:14:56 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/pollutants/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>report</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/report/</link>
-      <pubDate>Wed, 08 Sep 2021 11:14:56 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/report/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>active design</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/active-design/</link>
-      <pubDate>Wed, 08 Sep 2021 10:59:52 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/active-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>built environments</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/built-environments/</link>
-      <pubDate>Wed, 08 Sep 2021 10:59:52 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/built-environments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>safety</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/safety/</link>
-      <pubDate>Wed, 08 Sep 2021 10:59:52 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/safety/</guid>
       <description></description>
     </item>
     
@@ -679,15 +661,6 @@
       <pubDate>Wed, 25 Aug 2021 10:49:05 -0400</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/health-disparities/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>inequality</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/inequality/</link>
-      <pubDate>Wed, 25 Aug 2021 10:49:05 -0400</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/inequality/</guid>
       <description></description>
     </item>
     
@@ -809,11 +782,29 @@
     </item>
     
     <item>
+      <title>active design</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/active-design/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/active-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>alcohol</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/alcohol/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/alcohol/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>allergies</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/allergies/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/allergies/</guid>
       <description></description>
     </item>
     
@@ -890,6 +881,15 @@
     </item>
     
     <item>
+      <title>built environments</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/built-environments/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/built-environments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>cancer</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/cancer/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -926,6 +926,15 @@
     </item>
     
     <item>
+      <title>childhood asthma</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/childhood-asthma/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/childhood-asthma/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>children</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/children/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -940,15 +949,6 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/cigarettes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>climate chnage</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/climate-chnage/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/climate-chnage/</guid>
       <description></description>
     </item>
     
@@ -989,6 +989,15 @@
     </item>
     
     <item>
+      <title>crowding</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/crowding/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/crowding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>disease</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/disease/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -1012,6 +1021,15 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/drink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drinking</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/drinking/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/drinking/</guid>
       <description></description>
     </item>
     
@@ -1061,6 +1079,15 @@
     </item>
     
     <item>
+      <title>evictions</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/evictions/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/evictions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>falls</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/falls/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -1097,24 +1124,6 @@
     </item>
     
     <item>
-      <title>green</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/green/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/green/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>harbor</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/harbor/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/harbor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>health care</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/health-care/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -1147,6 +1156,15 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/home/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>home ownership</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/home-ownership/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/home-ownership/</guid>
       <description></description>
     </item>
     
@@ -1192,15 +1210,6 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/inspection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>justice</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/justice/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/justice/</guid>
       <description></description>
     </item>
     
@@ -1295,6 +1304,15 @@
     </item>
     
     <item>
+      <title>pollutants</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/pollutants/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/pollutants/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>pregnancy</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/pregnancy/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
@@ -1336,6 +1354,15 @@
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
       <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/rodents/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>safety</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/safety/</link>
+      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
+      
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/safety/</guid>
       <description></description>
     </item>
     
@@ -1430,11 +1457,11 @@
     </item>
     
     <item>
-      <title>trees</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/trees/</link>
+      <title>trigger</title>
+      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/trigger/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
       
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/trees/</guid>
+      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/keywords/trigger/</guid>
       <description></description>
     </item>
     
