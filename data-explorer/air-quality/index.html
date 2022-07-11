@@ -454,7 +454,7 @@
 
                     window.onpopstate = function (event) {
                         if (event.state != null){
-                            console.log('EVENT: ', event.state.id)
+                            
                             document.url = event.state.url;                            
                             loadIndicator(event.state.id, true)
                         }
@@ -514,7 +514,7 @@
                                 
                                 
                                         header = `Citywide Regulatory Monitoring`;
-                                        console.log('Header: ', header)
+                                        // console.log('Header: ', header)
                                         indicatorDropdown.innerHTML += header.length ? `<div class="dropdown-title"><strong>${header}</strong></div>`: '';
                                         
                                             
@@ -539,7 +539,7 @@
                                         
                                 
                                         header = `Neighborhood Air Quality`;
-                                        console.log('Header: ', header)
+                                        // console.log('Header: ', header)
                                         indicatorDropdown.innerHTML += header.length ? `<div class="dropdown-title"><strong>${header}</strong></div>`: '';
                                         
                                             
@@ -576,7 +576,7 @@
                                         
                                 
                                         header = ``;
-                                        console.log('Header: ', header)
+                                        // console.log('Header: ', header)
                                         indicatorDropdown.innerHTML += header.length ? `<div class="dropdown-title"><strong>${header}</strong></div>`: '';
                                         
                                             
@@ -599,7 +599,7 @@
                             }
 
                             const hash =  window.location.hash.replace('#', "")
-                            console.log('hash:', window.location.hash, hash)
+                            // console.log('hash:', window.location.hash, hash)
                             
                             switch(hash) {
                                 case 'display=summary':
@@ -618,7 +618,7 @@
                                     $('#tab-btn-table').tab('show');
                             }
                         })
-                        .catch(error => console.log(error));            
+                        .catch(error => console.log(error));
 
 
 
@@ -627,9 +627,9 @@
                     const joinData = () => {
                         if (hasCIData && hasNumberData) {
                             joinedAqData = aqData
-                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                 .relocate(['Name'], { after: 'GeoID' })
-                                .relocate(['Geotype'], { before: 'GeoID' })
+                                .relocate(['GeoType'], { before: 'GeoID' })
                                 .rename({
                                     'Name': 'Geography',
                                 })
@@ -637,18 +637,18 @@
                                 
                         } else if (hasCIData && !hasNumberData && hasPercentData) {
                             joinedAqData = aqData
-                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                 .relocate(['Name'], { after: 'GeoID' })
-                                .relocate(['Geotype'], { before: 'GeoID' })
+                                .relocate(['GeoType'], { before: 'GeoID' })
                                 .rename({
                                     'Name': 'Geography',
                                 })
                                 
                         } else {
                             joinedAqData = aqData
-                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                .join_left(geoTable, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                 .relocate(['Name'], { after: 'GeoID' })
-                                .relocate(['Geotype'], { before: 'GeoID' })
+                                .relocate(['GeoType'], { before: 'GeoID' })
                                 .rename({
                                     'Name': 'Geography',
                                 })
@@ -665,39 +665,44 @@
                         const filterBorough = joinedAqData.filter(d => d.GeoType  == 'Borough').objects();
                         const filterCitywide = joinedAqData.filter(d => d.GeoType  == 'Citywide').objects();
                         
-                        console.log('hhhhhhh ',aqData, joinedAqData )
-                        console.log('===>', filterUHF42, filterUHF34, filterCD, filterPuma, filterSubboro, filterBorough, filterCitywide)
-                        geoTable.print()
+                        // console.log('hhhhhhh ',aqData, joinedAqData )
+                        // console.log('===>', filterUHF42, filterUHF34, filterCD, filterPuma, filterSubboro, filterBorough, filterCitywide)
+                        // geoTable.print()
                                 
-                        joinedAqData.print()
+                        // joinedAqData.print()
 
 
                         fullDataMapObjects = [...filterUHF42, ...filterUHF34, ...filterCD, ...filterPuma, ...filterSubboro, ...filterNTA ];
-                        console.log('fullDataMapObjects', fullDataMapObjects)
+                        // console.log('fullDataMapObjects', fullDataMapObjects)
                         fullDataTrendObjects = [...filterBorough, ...filterCitywide];
                         fullDataLinksObjects = joinedAqData.objects();
-                        joinedAqData.print()
+
+                        console.log("==== joinedAqData ====");
+                        joinedAqData.print({limit: 100})
+                        console.log(joinedAqData);
+
                         renderMeasures();
                     }
 
                     const loadGeo = () => {
-                        const geoUrl = `https://raw.githubusercontent.com/nychealth/EHDP-data/main/geography/GeoLookup.csv`;
+                        const geoUrl = `https://raw.githubusercontent.com/nychealth/EHDP-data/main/geography/GeoLookup_2.csv`; // col named "GeoType"
+                        
                         // const geoStatic = `/ehs-data-portal-frontend-temp/IndicatorData/GeoLookup.csv`;
 
                         aq.loadCSV(geoUrl)
                             .then(data => {
 
                                 const standardizeGeoId = (id, type) => {
-                                    if (type === 'NTA') {
-                                        return `${id}`;
-                                    }
+                                    // if (type === 'NTA') {
+                                    //     return `${id}`;
+                                    // }
                                     return parseInt(id)
                                 }
                                 geoTable = data
-                                    .derive({ GeoID: aq.escape(d => standardizeGeoId(d.GeoID, d.Geotype))}) // convert GeoIDs to numbers and strings
+                                    .derive({ GeoID: aq.escape(d => standardizeGeoId(d.GeoID, d.GeoType))}) // convert GeoIDs to numbers and strings
                                     .select(aq.not('Lat', 'Long'))
-                                // console.log("---- Geo Names 1 (post-load) ----")
-                                
+                                console.log("---- Geo Names 1 (post-load) ----")
+                                geoTable.print({ limit: 300});
                                 joinData(); // run the next function 
                             });
                     }
@@ -725,11 +730,11 @@
                                 hasCIData = ciAqData.length > 0;
                                 hasNumberData = numAqData.length > 0;
                                 hasPercentData = pctAqData.length > 0;
-                                console.log('data: ', data)
-                                console.log('CI: ', ciAqData)
-                                console.log('Number: ', pctAqData)
-                                console.log('Percent: ', pctAqData)
-                                console.log('Stripped: ', data)
+                                // console.log('data: ', data)
+                                // console.log('CI: ', ciAqData)
+                                // console.log('Number: ', pctAqData)
+                                // console.log('Percent: ', pctAqData)
+                                // console.log('Stripped: ', data)
 
                                 const assignGeoRank = (GeoType) => {
                                     switch (GeoType) {
@@ -767,10 +772,14 @@
 
                                         
 
+                                console.log('==== ful ====')
+                                ful.print({limit: 100})
+                                console.log(ful)
+
                                 if (hasCIData) {
-                                    console.log('---- new table ----------')
+                                    // console.log('---- new table ----------')
                                     const dataMeasurementTypes = [...new Set(data.map(item => item.MeasurementType))]
-                                    console.log(dataMeasurementTypes, data)
+                                    // console.log(dataMeasurementTypes, data)
                                     if (pctAqData.length > 0) {
                                     pct = aq.from(pctAqData)
                                                 .groupby("Time", "GeoType", "GeoID", "CI")
@@ -862,20 +871,23 @@
                                     //             .join(pct, [["GeoID", "GeoType", "Time"], ["GeoID", "GeoType", "Time"]])
                                     //             .orderby(aq.desc('Time'), 'GeoRank')
                                     // } else {
-                                        console.log('test', ful)
-                                        ful.print()
+                                        // console.log('test', ful)
+                                        
                                         newTable = ful
-                                                .join(num, [["GeoID", "GeoType", "Time", "Number"], ["GeoID", "GeoType", "Time", "Number"]])
-                                                .join(pct, [["GeoID", "GeoType", "Time", "Percent"], ["GeoID", "GeoType", "Time", "Percent"]])
-                                                .orderby(aq.desc('Time'), 'GeoRank')
-                                    // }
-                                } else if (pctAqData.length > 0 && numAqData.length === 0) {
-                                    newTable =  aq.from(strippedAqData)
-                                                .join(num, [["GeoID", "GeoType", "Time"], ["GeoID", "GeoType", "Time"]])
-                                                .join(pct, [["GeoID", "GeoType", "Time"], ["GeoID", "GeoType", "Time"]])
-                                                .orderby(aq.desc('Time'), aq.desc('GeoRank'),  'Geography')
+                                            .join(num, [["GeoID", "GeoType", "Time", "Number"], ["GeoID", "GeoType", "Time", "Number"]])
+                                            .join(pct, [["GeoID", "GeoType", "Time", "Percent"], ["GeoID", "GeoType", "Time", "Percent"]])
+                                            .orderby(aq.desc('Time'), 'GeoRank')
+
+
+                                        
+                                        // }
+                                        // } else if (pctAqData.length > 0 && numAqData.length === 0) {
+                                //     newTable =  aq.from(strippedAqData)
+                                //                 .join(num, [["GeoID", "GeoType", "Time"], ["GeoID", "GeoType", "Time"]])
+                                //                 .join(pct, [["GeoID", "GeoType", "Time"], ["GeoID", "GeoType", "Time"]])
+                                //                 .orderby(aq.desc('Time'), aq.desc('GeoRank'),  'Geography')
                                 } else if (pctAqData.length === 0 && numAqData.length === 0) {
-                                    console.log('NO NUMBER OR PERCENT')
+                                    // console.log('NO NUMBER OR PERCENT')
                                     newTable = ful
                                             .groupby("Time", "GeoType", "GeoID")
                                             // .join(aUNum)
@@ -887,8 +899,12 @@
                                         .join_left(aUTPct, [["GeoID", "GeoType", "Time", "Any use of Tempo or Chinese Chalk - %"], ["GeoID", "GeoType", "Time", "Any use of Tempo or Chinese Chalk - %"]])
                                         // .join(aUTPct, [["GeoID", "GeoType", "Time", "Any use of Tempo or Chinese Chalk - %"], ["GeoID", "GeoType", "Time", "Any use of Tempo or Chinese Chalk - %"]])
                                         .orderby(aq.desc('Time'), aq.desc('GeoRank'), 'Geography')
-                                        console.log('newTable', newTable)
+                                        // console.log('newTable', newTable)
                                 }
+
+                                console.log('==== newTable ====')
+                                newTable.print({limit: 100})
+                                console.log(newTable)
                                 
 
                                 // console.log('newTable====================================')
@@ -907,14 +923,14 @@
                                         // .relocate(["GeoType"], { after: "Time" })
                                         // .relocate(["CI"], { after: "Percent" })
 
-                                        // .select(aq.not('Geotype', 'Long'))
+                                        // .select(aq.not('GeoType', 'Long'))
                                         // .rename({ CI: "95% CL" })
                                         // .pivot(
                                         // { key: d => op.lower(d.key) },
                                         // { value: d => op.sum(d.value) }
                                         // )
                                 } else {
-                                    console.log('hi', ful)
+                                    // console.log('hi', ful)
                                     aqData = ful
                                         .groupby("Time", "GeoType", "GeoID")
                                         // .impute({ Value: () => "**" })
@@ -933,8 +949,8 @@
                         const disparityMeasure = disparityIndicator[0];
                         const primaryMeasureTimes = primaryMeasure[0].AvailableTimes;
                         const primaryMeasurementType =  primaryMeasure[0].MeasurementType;
-                        console.log('+++++++++++++++ loadDisparitiyData +++++++++++++++++++++++++')
-                        console.log('primaryMeasureTimes: ',primaryMeasure, primaryMeasureTimes)
+                        // console.log('+++++++++++++++ loadDisparitiyData +++++++++++++++++++++++++')
+                        // console.log('primaryMeasureTimes: ',primaryMeasure, primaryMeasureTimes)
 
                         const aqPrimaryMeasureTimes = aq.from(primaryMeasureTimes)
 
@@ -951,13 +967,15 @@
                         const secondaryMeasureGeoTypes = filteredSecondaryMeasure[0].AvailableGeographyTypes;
 
                         const aqSecondaryMeasureTimes = aq.from(secondaryMeasureTimes)
-                        console.log('aqSecondaryMeasureTimes ===============================')
-                        aqSecondaryMeasureTimes.print()
+
+                        console.log('==== aqSecondaryMeasureTimes ====')
+                        aqSecondaryMeasureTimes.print({limit: 100})
+                        console.log(aqSecondaryMeasureTimes);
 
                         fetch(`https://raw.githubusercontent.com/nychealth/EHDP-data/main/indicators/data/${disparityIndicatorId}.json`)
                             .then(response => response.json())
                             .then(data => {
-                                console.log('TREND DISPARITY DATA: ', data, defaultTrendMeasure[0].MeasureID, defaultTrendMeasure[0].AvailableTimes)
+                                // console.log('TREND DISPARITY DATA: ', data, defaultTrendMeasure[0].MeasureID, defaultTrendMeasure[0].AvailableTimes)
                                 const test = data.filter(d => d.MeasureID === 221)
 
                                 let primaryTimes = []
@@ -977,17 +995,17 @@
                                     primaryTimes.includes(standardizeTime(d.Time))
                                 )
 
-                                console.log('TEST: ', test, )
-                                console.log('DISPARITY - filteredSecondaryIndicator:  ', filteredSecondaryIndicator)
-                                console.log('DISPARITY - filteredSecondaryMeasure: ', filteredSecondaryMeasure)
+                                // console.log('TEST: ', test, )
+                                // console.log('DISPARITY - filteredSecondaryIndicator:  ', filteredSecondaryIndicator)
+                                // console.log('DISPARITY - filteredSecondaryMeasure: ', filteredSecondaryMeasure)
                                 // console.log('disparityMeasureTimes' , disparityMeasureTimes)
-                                console.log('TREND FILTER BY TIME: ', primaryTimes, filterByTime)
+                                // console.log('TREND FILTER BY TIME: ', primaryTimes, filterByTime)
 
                                 // geoTable.print()
 
                           
                                 const filteredDisparityData = aq.from(filterByTime)
-                                    //.join(geoTable, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                    //.join(geoTable, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                     .join(aqSecondaryMeasureTimes, ["Time", "TimeDescription"])
                                     
                                     
@@ -997,15 +1015,15 @@
 
                                 
 
-                                console.log('DISPARITY - filteredDisparityData ==============================')
-                                filteredDisparityData.print({ limit: 10 })
+                                // console.log('DISPARITY - filteredDisparityData ==============================')
+                                // filteredDisparityData.print({ limit: 10 })
 
                                 const aqJoinedPrimaryMeasureTimes = aq.from(fullDataTrendObjects)
                                         .join(aqPrimaryMeasureTimes, ["Time", "TimeDescription"])
 
-                                        console.log("joinded time ----------- primary")
-                                        aqJoinedPrimaryMeasureTimes.print()
-                                console.log(aqJoinedPrimaryMeasureTimes)
+                                        // console.log("joinded time ----------- primary")
+                                        // aqJoinedPrimaryMeasureTimes.print()
+                                // console.log(aqJoinedPrimaryMeasureTimes)
                                 const aqJoinedPrimaryTrendData = aq.from(aqJoinedPrimaryMeasureTimes)
                                         .join(filteredDisparityData, 'end_period')
                                         .rename({'Age Adjusted Rate - Total': 'Median' })
@@ -1031,11 +1049,11 @@
                                         //.derive({Median: op.median('Value')})
                                
                                         
-                                    console.log('DISPARITY - aqJoinedPrimaryTrendData ==============================')
-                                    console.log(aqJoinedPrimaryTrendData)
-                                    aqJoinedPrimaryTrendData.print({ limit: 200 })
+                                    // console.log('DISPARITY - aqJoinedPrimaryTrendData ==============================')
+                                    // console.log(aqJoinedPrimaryTrendData)
+                                    // aqJoinedPrimaryTrendData.print({ limit: 200 })
 
-                                    console.log("TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == ")
+                                    // console.log("TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == TEST == ")
                                    
                                         
                                     // aqJoinedPrimaryTrendData.print()
@@ -1073,9 +1091,9 @@
                         selectedlinksSecondaryIndicatorData = filteredSecondaryIndicator
                         selectedlinksSecondaryMeasureData = filteredSecondaryMeasure
 
-                        console.log('PRIMARY MEASURE TIMES: +++++++++++ ', primaryMeasureTimes)
-                        console.log('FILTERED AXIS INDICATOR: --------- ', filteredSecondaryIndicator)
-                        console.log('FILTERED AXIS MEASURE: +++++++++++ ', filteredSecondaryMeasure)
+                        // console.log('PRIMARY MEASURE TIMES: +++++++++++ ', primaryMeasureTimes)
+                        // console.log('FILTERED AXIS INDICATOR: --------- ', filteredSecondaryIndicator)
+                        // console.log('FILTERED AXIS MEASURE: +++++++++++ ', filteredSecondaryMeasure)
 
                         const sortedPrimaryMeasureTimes = primaryMeasureTimes.sort((a, b) => b.end_period - a.end_period)
                         const mostRecentPrimaryMeasureTime = sortedPrimaryMeasureTimes[0].TimeDescription;
@@ -1105,17 +1123,17 @@
                         )
 
                         if (!filteredMatchingTimes.length) {
-                            console.log('no match')
+                            // console.log('no match')
                             const mostRecentMatchingTime = sortedSecondaryMeasureTimes.filter(t => 
                                 t.end_period === mostRecentPrimaryMeasureEndTime
                                 // t.start_period >= 'no' && t.end_period <= 'yes'
                             )
-                           //  console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ most recent mathcing time: ', mostRecentMatchingTime)
+                           //  // console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ most recent mathcing time: ', mostRecentMatchingTime)
                         }
 
-                        console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mathcing times', filteredMatchingTimes)
-                        console.log('SORTED SECONDARY MEASURE TIMES: ', sortedSecondaryMeasureTimes )
-                        console.log('MOST RECENT SECONDARY MEASURE START + END TIME: -------------- ', mostRecentSecondaryMeasureTime, mostRecentSecondaryMeasureStartTime, mostRecentSecondaryMeasureEndTime)
+                        // console.log('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mathcing times', filteredMatchingTimes)
+                        // console.log('SORTED SECONDARY MEASURE TIMES: ', sortedSecondaryMeasureTimes )
+                        // console.log('MOST RECENT SECONDARY MEASURE START + END TIME: -------------- ', mostRecentSecondaryMeasureTime, mostRecentSecondaryMeasureStartTime, mostRecentSecondaryMeasureEndTime)
 
                         const filteredSecondaryIndicatorId = filteredSecondaryIndicator[0].IndicatorID;
                             const sortedPrimaryT = aq.from(sortedPrimaryMeasureTimes)
@@ -1125,8 +1143,8 @@
                             .then(data => {
                                 
                                 const filteredSecondaryMeasureData = data.filter(d => d.MeasureID === primaryMeasureId)
-                                console.log('data: -----------------------------------> ', filteredSecondaryMeasureData)
-                                console.log('SORTED SECONDARY MEASURE TIMES ', sortedSecondaryMeasureTimes)
+                                // console.log('data: -----------------------------------> ', filteredSecondaryMeasureData)
+                                // console.log('SORTED SECONDARY MEASURE TIMES ', sortedSecondaryMeasureTimes)
 
                                 // const testData = aq.from(fullDataLinksObjects)
                                 //     .join(sortedSecondaryT, ["Time", "TimeDescription"])
@@ -1134,20 +1152,20 @@
                                 const aqJoinedSecondaryLinksData = aq.from(filteredSecondaryMeasureData)
                                     .groupby("Time", "GeoType", "GeoID", 'MeasureID')
                                     .pivot("MeasurementType", "Value")
-                                    .join(geoTable, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                    .join(geoTable, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                     .join(aqSecondaryMeasureTimes, ["Time", "TimeDescription"])
                                     .relocate(['Name'], { after: 'GeoID' })
-                                    .relocate(['Geotype'], { before: 'GeoID' })
+                                    .relocate(['GeoType'], { before: 'GeoID' })
                                     .rename({
                                         'Name': 'Geography',
                                     })
                                     
                                     
                                     // .filter(d => op.parse_int(d.Time) >= 2007 && op.parse_int(d.Time) === 2011)
-                                    // .join(testData, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                    // .join(testData, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                     
                                     // aq.from(fullDataLinksObjects).filter(d => d.Time === '2007-2011').print()
-                                    console.log('^^^^^^^^^^^^^^^^^ full data ^^^^^^^^^^^^^^^^^^^^^^^^', fullDataLinksObjects)
+                                    // console.log('^^^^^^^^^^^^^^^^^ full data ^^^^^^^^^^^^^^^^^^^^^^^^', fullDataLinksObjects)
 
 
                                 const  aqJoinedPrimaryLinksData = aq.from(fullDataLinksObjects)
@@ -1198,7 +1216,7 @@
                                     const aqMostRecentJoinedSecondaryLinksDataObject = aq.from(mostRecentJoinedSecondaryLinksDataObject)
 
                                     const aqJoinedPrimarySecondaryData = aq.from(filteredJoinedPrimaryLinksDataObject)
-                                        .join(aqMostRecentJoinedSecondaryLinksDataObject, [["GeoID", "GeoType"], ["GeoID", "Geotype"]])
+                                        .join(aqMostRecentJoinedSecondaryLinksDataObject, [["GeoID", "GeoType"], ["GeoID", "GeoType"]])
                                     
                                     // aqJoinedPrimarySecondaryData.print()
                                     joinedDataLinksObjects = aqJoinedPrimarySecondaryData.objects();
@@ -1212,7 +1230,7 @@
                     const handleYearFilter = (el, indicatorId) => {
                         el.addEventListener('change',(e) => {
                             if (e.target.checked) {
-                                console.log('checked')
+                                // console.log('checked')
                                 selectedSummaryYears = [e.target.value]
                             }
                             renderTable()
@@ -1371,14 +1389,14 @@
                         const combinedAbout = `<h6>${indicator.IndicatorName} - ${measurementType}</h6><p>${about}</p><h6>${secondaryIndicator} - ${secondaryMeasure}</h6><p>${secondaryAbout}</p>`;
                         
                         selectedLinkMeasureData = linksMeasures.filter(m => m.MeasureID === measureId)
-                        console.log('LINKS MEASURES: ', selectedLinkMeasureData, primaryMeasureId, linksSecondaryIndicator)
+                        // console.log('LINKS MEASURES: ', selectedLinkMeasureData, primaryMeasureId, linksSecondaryIndicator)
                         selectedLinksAbout = combinedAbout;
                         selectedLinksSources =  combinedSources;
 
 
-                        console.log('fix linksSecondaryIndicator: ', linksSecondaryIndicator)
-                        console.log('fix linksSecondaryMeasure: ', linksSecondaryMeasure)
-                        console.log('fix selectedLinkMeasureData', selectedLinkMeasureData)
+                        // console.log('fix linksSecondaryIndicator: ', linksSecondaryIndicator)
+                        // console.log('fix linksSecondaryMeasure: ', linksSecondaryMeasure)
+                        // console.log('fix selectedLinkMeasureData', selectedLinkMeasureData)
                         
                         renderAboutSources(combinedAbout, combinedSources);
                         renderLinksChart(selectedLinkMeasureData, measurementType, display, axis, measureId, secondaryMeasureId)
@@ -1386,7 +1404,7 @@
                     }
 
                     const setDefaultMapMeasure = (defaultArray, visArray) => {
-                        console.log('SET DEFAULT MEASURE: ', mapMeasures, trendMeasures, defaultArray)
+                        // console.log('SET DEFAULT MEASURE: ', mapMeasures, trendMeasures, defaultArray)
                         defaultArray.length = 0;
 
                         const hasAgeAdjustedRate = visArray.filter(measure =>
@@ -1509,11 +1527,11 @@
                         indicatorMeasurses = indicator?.Measures;
                         indicatorId = indicator?.IndicatorID;     
                         
-                        console.log('==========================================================================')
-                        console.log('Load Indicator - IndicatorId: ', indicatorId)
-                        console.log('Load Indicator - Description: ', indicatorDesc)
-                        console.log('Load Indicator - Indicator: ', indicator)
-                        console.log('Load Indicator - Measures: ', indicatorMeasurses)
+                        // console.log('==========================================================================')
+                        // console.log('Load Indicator - IndicatorId: ', indicatorId)
+                        // console.log('Load Indicator - Description: ', indicatorDesc)
+                        // console.log('Load Indicator - Indicator: ', indicator)
+                        // console.log('Load Indicator - Measures: ', indicatorMeasurses)
 
 
                         if (!bypassUrlChange) {
@@ -1528,8 +1546,8 @@
                     }
 
                     const renderMeasures = () => {
-                        console.log('==========================================================================')
-                        console.log('Render Measures')
+                        // console.log('==========================================================================')
+                        // console.log('Render Measures')
                         linksMeasures.length = 0
 
                         const contentSummary = document.querySelector('#tab-table');
@@ -1571,7 +1589,7 @@
                             dropdownTableGeo.innerHTML += `<label class="dropdown-item checkbox-geo"><input type="checkbox" value="${geoType}" checked /> ${geoType}</label>`;
                         });
 
-                        console.log('measures: ', indicator, indicatorMeasurses)
+                        // console.log('measures: ', indicator, indicatorMeasurses)
 
                         indicatorMeasurses.map((measure, index) => {
                             const type = measure?.MeasurementType;
@@ -1590,7 +1608,7 @@
                                 mapMeasures.push(measure)
                                 dropdownMapMeasures.innerHTML += `<div class="dropdown-column-${index}"><div class="dropdown-title"><strong> ${type}</strong></div></div>`;
                                 const dropdownMapMeasuresColumn = document.querySelector(`.dropdown-column-${index}`);
-                                console.log('dropdownMapMeasures: ', dropdownMapMeasures)
+                                // console.log('dropdownMapMeasures: ', dropdownMapMeasures)
                                 mapYears.map((time, index) => {
                                     dropdownMapMeasuresColumn.innerHTML += `<button class="dropdown-item link-measure"
                                         data-id="${measureId}"
@@ -1646,7 +1664,7 @@
                             $($.fn.dataTable.tables(true)).DataTable()
                                 .columns.adjust();
                             renderAboutSources(measureAbout, measureSources)
-                            console.log('tab')
+                            // console.log('tab')
                             window.location.hash = 'display=summary'
                             updateChartPlotSize();
                         });
@@ -1737,7 +1755,7 @@
                         if (mapMeasures.length === 0) {
                             disableLink(tabMap);
                             if (tabMapSelected === true && currentHash === 'display=map') {
-                                console.log('crack')
+                                // console.log('crack')
                                 $('#tab-btn-table').tab('show');
                             }
                         } else {
@@ -1807,18 +1825,29 @@
                     }
             </script>
 
+            <style>
+            .topic-text {
+                background-color: #f9f9f9;
+                padding: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 3px solid darkgray;
+            }
+
+                .topic-text h3 {
+                font-size: 18px;
+                color: #656565;
+            }
+                .topic-text p {
+                font-size: 12px;
+            }
+            </style>
+
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card fs-sm mb-2">
+                    <div class="card fs-sm mb-2 topic-text d-none d-md-block">
                         
-                        <div id="truncate" class="text-truncate">
-                            <p>Air quality is a <strong>measure of the condition of the air around us</strong>. The less air pollution there is, the better the air quality.</p>
-<p>Like many cities, New York City&rsquo;s air contains particles, liquid droplets, gases, and other contaminants that could impact health. Two pollutants, <strong><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Particulate_Matter%22%20target=%22_blank%22" title="Particulate matter">particulate matter</a> and</strong><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx" title="Glossary"><strong>ground-level ozone</strong></a>, are of particular health …</p>
-                        </div>
-
-                        
-                        <div id="full">
-                            <p>Air quality is a <strong>measure of the condition of the air around us</strong>. The less air pollution there is, the better the air quality.</p>
+                        <p>Air quality is a <strong>measure of the condition of the air around us</strong>. The less air pollution there is, the better the air quality.</p>
 <p>Like many cities, New York City&rsquo;s air contains particles, liquid droplets, gases, and other contaminants that could impact health. Two pollutants, <strong><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Particulate_Matter%22%20target=%22_blank%22" title="Particulate matter">particulate matter</a> and</strong><a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx" title="Glossary"><strong>ground-level ozone</strong></a>, are of particular health concern.</p>
 <p>Although New York City&rsquo;s air does not currently meet federal air quality standards, <strong>it has improved significantly over the past two decades</strong>.</p>
 <h3 id="air-pollution-and-health">Air Pollution and Health</h3>
@@ -1848,11 +1877,8 @@
 <p>The pollutants we measure are: <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx?#Fine_particulate_matter">fine particulate matter</a> (PM2.5), <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Ground_level_ozone%20">ground-level ozone (O3, summer)</a>, <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Nitrogen_oxides">nitrogen oxides (NOx)</a>, black carbon from diesel exhaust, <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Sulfur_dioxide">sulfur dioxide (SO2, winter)</a> and <a href="http://a816-dohbesp.nyc.gov/IndicatorPublic/Glossary.aspx#Nickel">nickel (Ni, winter)</a>.</p>
 <p>In NYC, health impacts from fine particulate matter, black carbon, and sulfur dioxide are higher in high-poverty neighborhoods.</p>
 
-                        </div>
-                        <p>
 
-                        
-                        <button class="btn-sm btn-outline-secondary float-right" onclick="reveal()" id="contenttoggle">Show more...<i class="fas fa-caret-square-down" aria-hidden="true"></i></button>
+
                     </div>
                 </div>
 
@@ -1873,7 +1899,7 @@
                         <p class="fs-sm indicator-description"><strong>Indicator description:</strong></p>
                     </div>
 
-                    <div class="nav nav-pills bg-white device-sm" role="tablist">
+                    <div class="nav nav-pills bg-white device-xs" role="tablist">
 
                         <a class="nav-item nav-link flex-fill active" id="tab-btn-table" href="#tab-table"
                             data-toggle="pill" aria-controls="tab-table" aria-selected="true" role="tab">
@@ -2157,14 +2183,6 @@
             option.innerHTML = "Drinking Water Quality"
             
             option.value = '\/ehs-data-portal-frontend-temp/\/data-explorer\/drinking-water-quality\/'
-            
-            ddlData.options.add(option);
-           
-            var option = document.createElement("OPTION");
-            
-            option.innerHTML = "Energy"
-            
-            option.value = '\/ehs-data-portal-frontend-temp/\/data-explorer\/energy\/'
             
             ddlData.options.add(option);
            

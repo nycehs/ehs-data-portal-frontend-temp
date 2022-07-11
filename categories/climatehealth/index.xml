@@ -89,17 +89,6 @@ The world’s climate is shifting, becoming warmer with more precipitation and w
     </item>
     
     <item>
-      <title>Energy</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/energy/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/energy/</guid>
-      <description>OneNYC is a comprehensive sustainability plan for New York City&amp;rsquo;s future.
-Goal: Reduce energy consumption and make our energy systems cleaner and more reliable. To measure progress, we are tracking how our buildings are becoming more energy efficient as well as the extent to which our energy is becoming cleaner and more reliable.
-Cleaner Energy To determine whether energy in NYC is getting cleaner, we track the carbon intensity of our electricity supply using a measure called an emissions coefficient.</description>
-    </item>
-    
-    <item>
       <title>Housing safety</title>
       <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/housing-safety/</link>
       <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>

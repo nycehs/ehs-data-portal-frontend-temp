@@ -334,10 +334,6 @@ Disallow: /keywords/dying/
 
 Disallow: /keywords/emergency-department-visits/
 
-Disallow: /keywords/energy/
-
-Disallow: /data-explorer/energy/
-
 Disallow: /keywords/environmental-health/
 
 Disallow: /keywords/evictions/
