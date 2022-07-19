@@ -1123,223 +1123,6 @@
     </script>
     
                     
-                    <button data-toggle="modal" data-target="#modal-bikeLanP-2" class="indicator-anchor">
-    <div class="row align-items-center">
-        <div class="col-6 col-md-5">
-            <span class="indicator-short-name">Bike lanes</span>
-        </div>
-        <div class="col-6 col-md-4 topic-list">
-            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/bikeLanP_208.svg" alt="Visualization showing neighborhood rank of 4 out of 42." width="100%" class="viz d-md-none mb-1">
-            <span class="middle">Middle</span>
-            
-        </div>
-        <div class="d-none d-md-inline col-md-3">
-            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/bikeLanP_208.svg" alt="Visualization showing neighborhood rank of 4 out of 42." class="viz">
-        </div>
-    </div>
-</button>
-
-
-<div class="modal fade report-modal" id="modal-bikeLanP-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header text-left">
-                <h2 class="modal-title fs-xl" id="exampleModalLabel">Bike lanes</h2>
-                <button type="button" class="close no-btn-style" data-dismiss="modal" aria-label="Close">
-                    <span class="fas fa-times-circle"></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h2 class="fs-xl">Streets with bicycle lanes (percent), 2017</h2>
-                <p>In <strong>Canarsie - Flatlands</strong>, the streets with bicycle lanes (percent), 2017 is <span class="middle">Middle</span> compared to the NYC average.</p>
-                The percent of streets with bike lanes can affect cyclist and pedestrian safety, physical activity, and sustainable transportation use. 
-            </div>
-            <hr>
-            <div class="modal-body">
-                <h3>Neighborhood Comparison</h3>
-                <div class="row comparison">
-                    <div class="col-sm-4 text-primary">Canarsie - Flatlands <span class="indicator-value">8.0</span></div>
-                    <div class="col-sm-4">Brooklyn <span class="indicator-value">13</span></div>
-                    <div class="col-sm-4">New York City <span class="indicator-value">10</span></div>
-                </div>
-                <p><em>Percent of Streets with Bicycle Lanes </em></p>
-                
-                
-                
-                <div class="data-note"></div>
-                
-                
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                <h3>Streets with bicycle lanes (percent), 2017</h3>
-                <p>  <em>Percent of Streets with Bicycle Lanes </em></p>
-                <div style="width:100%; height:30vmin; z-index:10000;" id="summary-bikeLanP-2"></div> 
-                
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                
-                <h3>Trends Over Time</h3>
-                <p><em>Percent of Streets with Bicycle Lanes </em></p>
-                <div style="width:100%; height:50vmin; z-index:10000;" id="trend-bikeLanP-2"></div> 
-                
-            </div>
-            <hr>
-            <div class="modal-body">
-                
-                <h3>By Neighborhood</h3>
-                <p><em>Percent of Streets with Bicycle Lanes </em></p>
-                <div style="width:100%; height:60vmin; z-index:10000;" id="map-bikeLanP-2"></div>
-                
-            </div>
-            
-            <div class="modal-footer flex-column">
-                
-                <button type="button" class="btn btn-primary px-6" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<script type="text/javascript">
-    
-    $( "#modal-bikeLanP-2" ).on('shown.bs.modal', function() {
-        
-        var opt = {"renderer": "svg"};
-
-        
-        
-        aq.loadCSV(
-
-            
-            
-            "https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/data/" + report_name + "_data.csv"
-        
-        ).then(data => {
-            
-            arqTable = data;
-            
-
-            
-
-            
-            
-            var summaryData = 
-                arqTable
-                .filter(d => d.data_field_name == "bikeLanP")
-                .select("geo_join_id", "neighborhood", "data_value", "message", "end_date")
-                .dedupe()
-                .groupby("neighborhood")
-                .orderby("neighborhood", aq.desc("end_date"))
-                .slice(0,1) 
-                .ungroup()
-                .orderby("data_value") 
-                .select(aq.not("end_date"))
-                .objects()
-                
-            console.log("summaryData", summaryData);
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/summarySpec.json").then(data => {
-                
-                summarySpec = data;
-
-                
-
-                summarySpec.encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#summary-bikeLanP-2", 
-                    summarySpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("summaryData", summaryData).run()
-
-                }).catch(console.error);;
-                
-            });
-            
-
-            
-
-            
-
-            var mapData = summaryData;
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/mapSpec.json").then(data => {
-                
-                mapSpec = data;
-                
-                
-
-                mapSpec.layer[1].encoding.stroke.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#map-bikeLanP-2", 
-                    mapSpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("mapData", mapData).run()
-                    
-                }).catch(console.error);;
-                
-            });
-
-            
-            
-
-            
-            
-            var trendData = 
-                arqTable
-                .filter(d => d.data_field_name == "bikeLanP")
-                .select("start_date", "time", "geo_join_id", "neighborhood", "data_value", "message")
-                .dedupe()
-                .objects()
-            
-            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/trendSpec.json").then(data => {
-                
-                
-                
-                trendSpec = data;
-                
-                
-
-                trendSpec.layer[1].encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
-                
-            }).then(() => {
-                
-                vegaEmbed(
-                    "#trend-bikeLanP-2", 
-                    trendSpec, 
-                    opt
-                ).then((res) => {
-                    
-                    res.view.insert("trendData", trendData).run()
-                    
-                }).catch(console.error);;
-                
-            });
-            
-        });
-            
-    });
-        
-    </script>
-    
-                    
                     <button data-toggle="modal" data-target="#modal-treeCovP-2" class="indicator-anchor">
     <div class="row align-items-center">
         <div class="col-6 col-md-5">
@@ -1757,6 +1540,223 @@
                 
                 vegaEmbed(
                     "#trend-subDistP-2", 
+                    trendSpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("trendData", trendData).run()
+                    
+                }).catch(console.error);;
+                
+            });
+            
+        });
+            
+    });
+        
+    </script>
+    
+                    
+                    <button data-toggle="modal" data-target="#modal-bikeLanP-2" class="indicator-anchor">
+    <div class="row align-items-center">
+        <div class="col-6 col-md-5">
+            <span class="indicator-short-name">Bike lanes</span>
+        </div>
+        <div class="col-6 col-md-4 topic-list">
+            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/bikeLanP_208.svg" alt="Visualization showing neighborhood rank of 4 out of 42." width="100%" class="viz d-md-none mb-1">
+            <span class="worse">Worse</span>
+            
+        </div>
+        <div class="d-none d-md-inline col-md-3">
+            <img src="https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/images/bikeLanP_208.svg" alt="Visualization showing neighborhood rank of 4 out of 42." class="viz">
+        </div>
+    </div>
+</button>
+
+
+<div class="modal fade report-modal" id="modal-bikeLanP-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-left">
+                <h2 class="modal-title fs-xl" id="exampleModalLabel">Bike lanes</h2>
+                <button type="button" class="close no-btn-style" data-dismiss="modal" aria-label="Close">
+                    <span class="fas fa-times-circle"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2 class="fs-xl">Streets with bicycle lanes (percent), 2017</h2>
+                <p>In <strong>Canarsie - Flatlands</strong>, the streets with bicycle lanes (percent), 2017 is <span class="worse">Worse</span> compared to the NYC average.</p>
+                The percent of streets with bike lanes can affect cyclist and pedestrian safety, physical activity, and sustainable transportation use. 
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h3>Neighborhood Comparison</h3>
+                <div class="row comparison">
+                    <div class="col-sm-4 text-primary">Canarsie - Flatlands <span class="indicator-value">8.0</span></div>
+                    <div class="col-sm-4">Brooklyn <span class="indicator-value">13</span></div>
+                    <div class="col-sm-4">New York City <span class="indicator-value">10</span></div>
+                </div>
+                <p><em>Percent of Streets with Bicycle Lanes </em></p>
+                
+                
+                
+                <div class="data-note"></div>
+                
+                
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                <h3>Streets with bicycle lanes (percent), 2017</h3>
+                <p>  <em>Percent of Streets with Bicycle Lanes </em></p>
+                <div style="width:100%; height:30vmin; z-index:10000;" id="summary-bikeLanP-2"></div> 
+                
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                
+                <h3>Trends Over Time</h3>
+                <p><em>Percent of Streets with Bicycle Lanes </em></p>
+                <div style="width:100%; height:50vmin; z-index:10000;" id="trend-bikeLanP-2"></div> 
+                
+            </div>
+            <hr>
+            <div class="modal-body">
+                
+                <h3>By Neighborhood</h3>
+                <p><em>Percent of Streets with Bicycle Lanes </em></p>
+                <div style="width:100%; height:60vmin; z-index:10000;" id="map-bikeLanP-2"></div>
+                
+            </div>
+            
+            <div class="modal-footer flex-column">
+                
+                <button type="button" class="btn btn-primary px-6" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    
+    $( "#modal-bikeLanP-2" ).on('shown.bs.modal', function() {
+        
+        var opt = {"renderer": "svg"};
+
+        
+        
+        aq.loadCSV(
+
+            
+            
+            "https://raw.githubusercontent.com/nychealth/EHDP-data/main/neighborhoodreports/data/" + report_name + "_data.csv"
+        
+        ).then(data => {
+            
+            arqTable = data;
+            
+
+            
+
+            
+            
+            var summaryData = 
+                arqTable
+                .filter(d => d.data_field_name == "bikeLanP")
+                .select("geo_join_id", "neighborhood", "data_value", "message", "end_date")
+                .dedupe()
+                .groupby("neighborhood")
+                .orderby("neighborhood", aq.desc("end_date"))
+                .slice(0,1) 
+                .ungroup()
+                .orderby("data_value") 
+                .select(aq.not("end_date"))
+                .objects()
+                
+            console.log("summaryData", summaryData);
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/summarySpec.json").then(data => {
+                
+                summarySpec = data;
+
+                
+
+                summarySpec.encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#summary-bikeLanP-2", 
+                    summarySpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("summaryData", summaryData).run()
+
+                }).catch(console.error);;
+                
+            });
+            
+
+            
+
+            
+
+            var mapData = summaryData;
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/mapSpec.json").then(data => {
+                
+                mapSpec = data;
+                
+                
+
+                mapSpec.layer[1].encoding.stroke.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#map-bikeLanP-2", 
+                    mapSpec, 
+                    opt
+                ).then((res) => {
+                    
+                    res.view.insert("mapData", mapData).run()
+                    
+                }).catch(console.error);;
+                
+            });
+
+            
+            
+
+            
+            
+            var trendData = 
+                arqTable
+                .filter(d => d.data_field_name == "bikeLanP")
+                .select("start_date", "time", "geo_join_id", "neighborhood", "data_value", "message")
+                .dedupe()
+                .objects()
+            
+            d3.json("https:\/\/nycehs.github.io\/ehs-data-portal-frontend-temp\/visualizations/spec/trendSpec.json").then(data => {
+                
+                
+                
+                trendSpec = data;
+                
+                
+
+                trendSpec.layer[1].encoding.color.condition.test = "datum.neighborhood=='" + NeighborhoodName + "'";
+                
+            }).then(() => {
+                
+                vegaEmbed(
+                    "#trend-bikeLanP-2", 
                     trendSpec, 
                     opt
                 ).then((res) => {
