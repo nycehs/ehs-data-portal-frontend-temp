@@ -252,8 +252,6 @@ Disallow: /data-explorer/asthma/
 
 Disallow: /data-explorer/asthma-triggers/
 
-Disallow: /keywords/attacks/
-
 Disallow: /keywords/babies/
 
 Disallow: /data-explorer/bed-bugs/
@@ -296,8 +294,6 @@ Disallow: /keywords/childhood-asthma/
 
 Disallow: /keywords/children/
 
-Disallow: /data-explorer/chronic-obstructive-pulmonary-disease/
-
 Disallow: /data-explorer/cigarette-smoke/
 
 Disallow: /keywords/cigarettes/
@@ -313,8 +309,6 @@ Disallow: /keywords/cold/
 Disallow: /keywords/cold-weather/
 
 Disallow: /keywords/construction/
-
-Disallow: /keywords/copd/
 
 Disallow: /keywords/crowding/
 
@@ -356,10 +350,6 @@ Disallow: /data-explorer/health-impacts-of-air-pollution/
 
 Disallow: /keywords/healthy-housing/
 
-Disallow: /keywords/heart/
-
-Disallow: /data-explorer/heart-attacks/
-
 Disallow: /keywords/home/
 
 Disallow: /keywords/home-ownership/
@@ -379,8 +369,6 @@ Disallow: /keywords/illness/
 Disallow: /keywords/injury/
 
 Disallow: /keywords/inspection/
-
-Disallow: /data-explorer/large-city-air-quality-comparison/
 
 Disallow: /data-explorer/lead/
 

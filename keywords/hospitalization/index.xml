@@ -16,16 +16,5 @@
       <description>Carbon monoxide (CO) is a poisonous gas that forms when fuel or other materials are burned. It is invisible and has no odor. Even short-term exposure to high levels of carbon monoxide can be fatal. Carbon monoxide blocks oxygen transport in the body. Symptoms of mild carbon monoxide poisoning include headache, nausea, fatigue, dizziness and disorientation. Breathing high concentrations of carbon monoxide can cause somebody to lose consciousness and have permanent neurological injury - or even death.</description>
     </item>
     
-    <item>
-      <title>Chronic Obstructive Pulmonary Disease</title>
-      <link>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</link>
-      <pubDate>Fri, 28 May 2021 18:02:58 +0000</pubDate>
-      
-      <guid>https://nycehs.github.io/ehs-data-portal-frontend-temp/data-explorer/chronic-obstructive-pulmonary-disease/</guid>
-      <description>Chronic obstructive pulmonary disease, or COPD, is a group of diseases that include emphysemia and chronic bronchitis.
-These diseases can cause severe breathing problems. Over 16 million Americans have COPD, and it is the third-leading cause of death in the USA.
-Though there is no cure for COPD, it can be treated and managed. One important way to manage COPD is to reduce environmental exposure to things that can exacerbate COPD, like tobacco smoke, indoor air pollution, and outdoor air pollution.</description>
-    </item>
-    
   </channel>
 </rss>
